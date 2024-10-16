@@ -1,3 +1,6 @@
-# Проект курса BroAcademy
+# BroAcademy project
 
-Первый проект, который осуществляет знакомство с GitHub. Первая половина
+The first project, that carries out acquaintance with GitHub. The first half
+
+Contributor: DoorDoom
+Code reviewer: Zzoysanna
