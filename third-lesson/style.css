@@ -1,0 +1,195 @@
+.devider {
+}
+.horizontal-devider {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: yellowgreen;
+}
+.header__logo {
+}
+.header__navigation {
+}
+.navigation__item {
+}
+.header__searching-and-links {
+  display: flex;
+  gap: 16px;
+}
+.searching {
+}
+.searching__button {
+}
+.searching__input {
+}
+.header-links__to-discord {
+}
+.header-links__to-connect {
+}
+
+.main {
+}
+.main__title {
+}
+.main__highlight-text {
+}
+.main__parameter-description {
+}
+.parameter-description__title {
+}
+.parameter-description__highlight-text {
+}
+.main__main-buttons {
+}
+.main-buttons__to-connect {
+}
+.main-buttons__to-wishlist {
+}
+
+.catalog {
+}
+.catalog__controller {
+  display: flex;
+  justify-content: space-between;
+}
+.controller__controller-header {
+  display: flex;
+}
+.controller-header__image {
+}
+.controller-header__title {
+}
+
+.controller__controller-buttons {
+  display: flex;
+}
+.controller-buttons__button {
+}
+.catalog__catalog-cards {
+  display: flex;
+}
+.catalog-cards__catolog-card {
+}
+.catolog-card__image {
+}
+.catolog-card__label {
+}
+.catolog-card__price {
+}
+.catolog-card__name {
+}
+
+.our-blog {
+}
+.our-blog__title {
+}
+.our-blog__blog-viewer {
+  display: flex;
+}
+.blog-viewer__blog-card {
+}
+.blog-card__image {
+}
+.blog-card__label {
+}
+.blog-card__post-data {
+}
+.post-data__image {
+}
+.post-data__author {
+}
+.post-data__calendar {
+}
+.blog-card__title {
+}
+.blog-card__text {
+}
+.blog-card__button {
+}
+.our-blog__button {
+}
+
+.about-us {
+}
+.about-us__title {
+}
+.about-us__about-viewer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.about-viewer__about-card {
+}
+.about-card__image {
+}
+.about-card__title {
+}
+.about-card__text {
+}
+.about-us__button {
+}
+
+.our-team {
+}
+.our-team__title {
+}
+.our-team__team-viewer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.our-team__card {
+}
+.our-team__image {
+}
+.our-team__text {
+}
+.our-team__socials {
+  display: flex;
+}
+
+.faqs {
+}
+.faqs__title {
+}
+.faqs__details {
+}
+.faqs__summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background: yellowgreen;
+}
+.footer__footer-description {
+  display: flex;
+}
+.footer-description {
+  flex-grow: 3;
+}
+.footer-description__link {
+}
+.footer-description__text {
+}
+.footer__footer-column {
+}
+.footer-column__title {
+}
+.footer-column__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer-column__item {
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+}
+.socials__list {
+  display: flex;
+}
+.socials__to-connect {
+}
+.footer-link__text {
+}
