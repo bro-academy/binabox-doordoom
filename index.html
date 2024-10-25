@@ -51,11 +51,11 @@
         <div class="main__parameter-description">
           <div>
             <p class="parameter-description__highlight-text">2240+</p>
-            <h3 class="parameter-description__title">Total Iteam</h3>
+            <p class="parameter-description__title">Total Iteam</p>
           </div>
           <div>
             <p class="parameter-description__highlight-text">1000+</p>
-            <h3 class="parameter-description__title">Profiles whitelisted</h3>
+            <p class="parameter-description__title">Profiles whitelisted</p>
           </div>
         </div>
         <div class="main__main-buttons">
@@ -65,8 +65,8 @@
           <button class="main-buttons__to-wishlist">Whitelist now</button>
         </div>
       </section>
-      <section class="catalog" id="catalog">
-        <div class="catalog__controller">
+      <section class="catalog">
+        <header class="catalog__controller">
           <div class="controller__controller-header">
             <img class="controller-header__image" src="#" alt="field" />
             <h2 class="controller-header__title">Catalog</h2>
@@ -82,41 +82,51 @@
               <img src="#" alt="right arrow" />
             </button>
           </div>
-        </div>
+        </header>
         <div class="catalog__catalog-cards">
-          <article class="catalog-cards__catolog-card">
-            <img src="#" alt="product image" class="catolog-card__image" />
-            <span class="catolog-card__label">New</span>
-            <p class="catolog-card__price">$199</p>
-            <h3 class="catolog-card__name">Name product</h3>
-          </article>
-          <article class="catalog-cards__catolog-card">
-            <img src="#" alt="product image" class="catolog-card__image" />
-            <span class="catolog-card__label">New</span>
-            <p class="catolog-card__price">$199</p>
-            <h3 class="catolog-card__name">Name product</h3>
-          </article>
-          <article class="catalog-cards__catolog-card">
-            <img src="#" alt="product image" class="catolog-card__image" />
-            <span class="catolog-card__label">Sold Out</span>
-            <p class="catolog-card__price">$199</p>
-            <h3 class="catolog-card__name">Name product</h3>
-          </article>
-          <article class="catalog-cards__catolog-card">
-            <img src="#" alt="product image" class="catolog-card__image" />
-            <span class="catolog-card__label">New</span>
-            <p class="catolog-card__price">$199</p>
-            <h3 class="catolog-card__name">Name product</h3>
-          </article>
-          <article class="catalog-cards__catolog-card">
-            <img src="#" alt="product image" class="catolog-card__image" />
-            <span class="catolog-card__label">New</span>
-            <p class="catolog-card__price">$199</p>
-            <h3 class="catolog-card__name">Name product</h3>
-          </article>
+          <a href="#" class="catalog-cards__link" target="_blank">
+            <article class="catalog-cards__catolog-card">
+              <img src="#" alt="product image" class="catolog-card__image" />
+              <span class="catolog-card__label">New</span>
+              <p class="catolog-card__price">$199</p>
+              <h3 class="catolog-card__name">Name product</h3>
+            </article>
+          </a>
+          <a href="#" class="catalog-cards__link" target="_blank">
+            <article class="catalog-cards__catolog-card">
+              <img src="#" alt="product image" class="catolog-card__image" />
+              <span class="catolog-card__label">New</span>
+              <p class="catolog-card__price">$199</p>
+              <h3 class="catolog-card__name">Name product</h3>
+            </article>
+          </a>
+          <a href="#" class="catalog-cards__link" target="_blank">
+            <article class="catalog-cards__catolog-card">
+              <img src="#" alt="product image" class="catolog-card__image" />
+              <span class="catolog-card__label">Sold Out</span>
+              <p class="catolog-card__price">$199</p>
+              <h3 class="catolog-card__name">Name product</h3>
+            </article>
+          </a>
+          <a href="#" class="catalog-cards__link" target="_blank">
+            <article class="catalog-cards__catolog-card">
+              <img src="#" alt="product image" class="catolog-card__image" />
+              <span class="catolog-card__label">New</span>
+              <p class="catolog-card__price">$199</p>
+              <h3 class="catolog-card__name">Name product</h3>
+            </article>
+          </a>
+          <a href="#" class="catalog-cards__link" target="_blank">
+            <article class="catalog-cards__catolog-card">
+              <img src="#" alt="product image" class="catolog-card__image" />
+              <span class="catolog-card__label">New</span>
+              <p class="catolog-card__price">$199</p>
+              <h3 class="catolog-card__name">Name product</h3>
+            </article>
+          </a>
         </div>
       </section>
-      <section class="our-blog" id="blog">
+      <section class="our-blog">
         <h2 class="our-blog__title">Our blog</h2>
         <div class="our-blog__blog-viewer">
           <article class="blog-viewer__blog-card">
@@ -521,7 +531,9 @@
         <details class="faqs__details">
           <summary class="faqs__summary">
             <h3>What are the NFTs?</h3>
-            <img src="#" alt="show button" />
+            <button class="faqs__control-button">
+              <img src="#" alt="show button" />
+            </button>
           </summary>
           Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
           Nulla dapibus urna volutpat venenatis, risus faucibus.
@@ -529,7 +541,9 @@
         <details class="faqs__details">
           <summary class="faqs__summary">
             <h3>How do i get NFTs?</h3>
-            <img src="#" alt="show button" />
+            <button class="faqs__control-button">
+              <img src="#" alt="show button" />
+            </button>
           </summary>
           Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
           Nulla dapibus urna volutpat venenatis, risus faucibus.
@@ -537,18 +551,22 @@
         <details class="faqs__details">
           <summary class="faqs__summary">
             <h3>How can we buy your NFTs?</h3>
-            <img src="#" alt="show button" />
+            <button class="faqs__control-button">
+              <img src="#" alt="show button" />
+            </button>
           </summary>
         </details>
         <details class="faqs__details">
           <summary class="faqs__summary">
             <h3>Who are the team behind the project?</h3>
-            <img src="#" alt="show button" />
+            <button class="faqs__control-button">
+              <img src="#" alt="show button" />
+            </button>
           </summary>
         </details>
       </section>
     </main>
-    <footer class="footer" id="contacts">
+    <footer class="footer">
       <div class="footer__footer-description">
         <div class="footer-description">
           <a class="footer-description__link" href="#main"
