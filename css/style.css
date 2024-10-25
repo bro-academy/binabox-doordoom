@@ -29,7 +29,16 @@
 
 .about-us__about-viewer {
   display: grid;
+  list-style-type: none;
   grid-template-columns: auto auto;
+}
+.about-card__number {
+  position: absolute;
+  margin: 0;
+  -webkit-text-stroke: 1px #333;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 40px;
 }
 
 .our-team__team-viewer {
