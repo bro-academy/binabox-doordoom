@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The third lesson for BRO academy" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Third Lesson</title>
   </head>
   <body>
@@ -14,10 +14,16 @@
       /></a>
       <nav class="header__navigation">
         <ul>
-          <li class="navigation__item"><a href="#main">Home</a></li>
-          <li class="navigation__item"><a href="#blog">Blog</a></li>
-          <li class="navigation__item"><a href="#catalog">Catalog</a></li>
-          <li class="navigation__item"><a href="#contacts">Contact Us</a></li>
+          <li class="navigation__item"><a href="./index.html">Home</a></li>
+          <li class="navigation__item">
+            <a href="./blog.html" target="_blank">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./catalog.html" target="_blank">Catalog</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./contacts.html" target="_blank">Contact Us</a>
+          </li>
         </ul>
       </nav>
       <div class="header__searching-and-links">
@@ -28,10 +34,10 @@
           <input class="searching__input" type="search" />
         </div>
         <div class="devider"></div>
-        <a href="#" class="header-links__to-discord"
+        <a href="#" class="header-links__to-discord" target="_blank"
           ><img src="#" alt="Discord" /> Discord</a
         >
-        <a href="#" class="header-links__to-connect"
+        <a href="#" class="header-links__to-connect" target="_blank"
           ><img src="#" alt="Wallet" /> Connect</a
         >
       </div>
@@ -53,7 +59,9 @@
           </div>
         </div>
         <div class="main__main-buttons">
-          <a href="#" class="main-buttons__to-connect"> Connect Wallet</a>
+          <a href="#" class="main-buttons__to-connect" target="_blank">
+            Connect Wallet</a
+          >
           <button class="main-buttons__to-wishlist">Whitelist now</button>
         </div>
       </section>
@@ -126,7 +134,7 @@
               One September 22, 2021 A volutpat nulla eros, nulla ultrices
               necnulla imperdiet...
             </p>
-            <a class="blog-card__button">
+            <a class="blog-card__button" target="_blank" href="#">
               Read more
               <img src="#" alt="right arrow" />
             </a>
@@ -146,7 +154,7 @@
               One September 22, 2021 A volutpat nulla eros, nulla ultrices
               necnulla imperdiet...
             </p>
-            <a class="blog-card__button">
+            <a class="blog-card__button" target="_blank" href="#">
               Read more
               <img src="#" alt="right arrow" />
             </a>
@@ -166,7 +174,7 @@
               One September 22, 2021 A volutpat nulla eros, nulla ultrices
               necnulla imperdiet...
             </p>
-            <a class="blog-card__button">
+            <a class="blog-card__button" href="#" target="_blank">
               Read more
               <img src="#" alt="right arrow" />
             </a>
@@ -186,7 +194,7 @@
               One September 22, 2021 A volutpat nulla eros, nulla ultrices
               necnulla imperdiet...
             </p>
-            <a class="blog-card__button">
+            <a class="blog-card__button" href="#" target="_blank">
               Read more
               <img src="#" alt="right arrow" />
             </a>
@@ -206,7 +214,7 @@
               One September 22, 2021 A volutpat nulla eros, nulla ultrices
               necnulla imperdiet...
             </p>
-            <a class="blog-card__button">
+            <a class="blog-card__button" href="#" target="_blank">
               Read more
               <img src="#" alt="right arrow" />
             </a>
@@ -226,13 +234,13 @@
               One September 22, 2021 A volutpat nulla eros, nulla ultrices
               necnulla imperdiet...
             </p>
-            <a class="blog-card__button">
+            <a class="blog-card__button" href="#" target="_blank">
               Read more
               <img src="#" alt="right arrow" />
             </a>
           </article>
         </div>
-        <a class="our-blog__button">Read more</a>
+        <a class="our-blog__button" href="#" target="_blank">Read more</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">About us</h2>
@@ -243,41 +251,41 @@
           laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
           occaecat
         </p>
-        <div class="about-us__about-viewer">
-          <div class="about-viewer__about-card">
+        <ol class="about-us__about-viewer">
+          <li class="about-viewer__about-card">
             <img class="about-card__image" src="#" alt="digit" />
             <h3 class="about-card__title">High quality</h3>
             <p class="about-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
-          </div>
-          <div class="about-viewer__about-card">
+          </li>
+          <li class="about-viewer__about-card">
             <img class="about-card__image" src="#" alt="digit" />
             <h3 class="about-card__title">Big collection</h3>
             <p class="about-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
-          </div>
-          <div class="about-viewer__about-card">
+          </li>
+          <li class="about-viewer__about-card">
             <img class="about-card__image" src="#" alt="digit" />
             <h3 class="about-card__title">Top Resourse</h3>
             <p class="about-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
-          </div>
-          <div class="about-viewer__about-card">
+          </li>
+          <li class="about-viewer__about-card">
             <img class="about-card__image" src="#" alt="digit" />
             <h3 class="about-card__title">Big community</h3>
             <p class="about-card__text">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
-          </div>
-        </div>
-        <a class="about-us__button">Read more</a>
+          </li>
+        </ol>
+        <a class="about-us__button" href="#" target="_blank">Read more</a>
       </section>
       <section class="our-team">
         <h2 class="our-team__title">Our team</h2>
@@ -288,27 +296,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -320,27 +333,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -352,27 +370,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -384,27 +407,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -416,27 +444,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -448,27 +481,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -480,27 +518,32 @@
             <p class="our-team__text">Co - Founder</p>
             <ul class="our-team__socials">
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Twitter"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="Telegram"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect"
+                <a href="#" class="socials__to-connect" href="#" target="_blank"
                   ><img src="#" alt="LinkedIn"
                 /></a>
               </li>
               <li>
-                <a href="#" class="socials__to-connect">
+                <a
+                  href="#"
+                  class="socials__to-connect"
+                  href="#"
+                  target="_blank"
+                >
                   <img src="#" alt="Instagram"
                 /></a>
               </li>
@@ -554,10 +597,14 @@
           <h3 class="footer-column__title">Subscribe</h3>
           <ul class="footer-column__column">
             <li class="footer-column__item"><a href="#main">Home</a></li>
-            <li class="footer-column__item"><a href="#blog">Blog</a></li>
-            <li class="footer-column__item"><a href="#catalog">Catalog</a></li>
             <li class="footer-column__item">
-              <a href="#contacts">Contact Us</a>
+              <a href="./blog.html" target="_blank">Blog</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="./catalog.html" target="_blank">Catalog</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="./contacts.html" target="_blank">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -565,11 +612,17 @@
           <h3 class="footer-column__title">Company</h3>
           <ul class="footer-column__column">
             <li class="footer-column__item">
-              <a href="#">Terms Canditions</a>
+              <a href="#" target="_blank">Terms Canditions</a>
             </li>
-            <li class="footer-column__item"><a href="#">Privacy Policy</a></li>
-            <li class="footer-column__item"><a href="#">Whitepaper</a></li>
-            <li class="footer-column__item"><a href="#">Help Center</a></li>
+            <li class="footer-column__item">
+              <a href="#" target="_blank">Privacy Policy</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#" target="_blank">Whitepaper</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="#" target="_blank">Help Center</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -577,32 +630,32 @@
         <p class="footer-link__text">BINABOX 2022 - ALL rights reserved</p>
         <ul class="socials__list">
           <li>
-            <a href="#" class="socials__to-connect"
+            <a href="#" class="socials__to-connect" target="_blank"
               ><img src="#" alt="Twitter"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect"
+            <a href="#" class="socials__to-connect" target="_blank"
               ><img src="#" alt="Facebook"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect"
+            <a href="#" class="socials__to-connect" target="_blank"
               ><img src="#" alt="Telegram"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect"
+            <a href="#" class="socials__to-connect" target="_blank"
               ><img src="#" alt="YouTube"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect">
+            <a href="#" class="socials__to-connect" target="_blank">
               <img src="#" alt="Tik Tok"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect">
+            <a href="#" class="socials__to-connect" target="_blank">
               <img src="#" alt="Discord" />
             </a>
           </li>
