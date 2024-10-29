@@ -29,16 +29,19 @@
 
 .about-us__about-viewer {
   display: grid;
+  counter-reset: item;
   list-style-type: none;
   grid-template-columns: auto auto;
 }
-.about-card__number {
+
+.about-us__about-viewer > li:before {
   position: absolute;
-  margin: 0;
   -webkit-text-stroke: 1px #333;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   font-size: 40px;
+  content: counter(item, decimal-leading-zero);
+  counter-increment: item;
 }
 
 .our-team__team-viewer {
