@@ -58,6 +58,33 @@
   justify-content: space-between;
 }
 
+.intro__intro-crumbs > ol {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.blog-place {
+  display: flex;
+}
+
+.blog-post__list {
+  list-style-image: url("../images/small-logo.svg");
+}
+.blog-post__images {
+  display: flex;
+}
+.blog-post__blog-links {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-post__blog-links > div {
+  display: flex;
+}
+.blog-links__list {
+  display: flex;
+}
+
 .footer {
   background: yellowgreen;
 }
