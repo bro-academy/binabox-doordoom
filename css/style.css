@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: yellowgreen;
+}
+.header__searching-and-links {
+  display: flex;
+  gap: 16px;
+}
+
+.catalog__controller {
+  display: flex;
+  justify-content: space-between;
+}
+.controller__controller-header {
+  display: flex;
+}
+
+.controller__controller-buttons {
+  display: flex;
+}
+
+.catalog__catalog-cards {
+  display: flex;
+}
+.our-blog__blog-viewer {
+  display: flex;
+}
+
+.about-us__about-viewer {
+  display: grid;
+  counter-reset: item;
+  list-style-type: none;
+  grid-template-columns: auto auto;
+}
+
+.about-us__about-viewer > li:before {
+  position: absolute;
+  -webkit-text-stroke: 1px #333;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 40px;
+  content: counter(item, decimal-leading-zero);
+  counter-increment: item;
+}
+
+.our-team__team-viewer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-team__socials {
+  display: flex;
+}
+
+.faqs__summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background: yellowgreen;
+}
+.footer__footer-description {
+  display: flex;
+}
+.footer-description {
+  flex-grow: 3;
+}
+
+.footer-column__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+}
+.socials__list {
+  display: flex;
+}
