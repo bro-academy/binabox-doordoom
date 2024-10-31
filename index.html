@@ -4,92 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The third lesson for BRO academy" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://github.com/necolas/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Binabox</title>
   </head>
   <body>
     <header class="header">
       <a href="/" class="header__logo">
-        <img src="./images/white-logo.svg" alt="Logo"
-      /></a>
+        <img src="./images/white-logo.svg" alt="Logo" />
+      </a>
       <nav class="header__navigation">
-        <ul>
-          <li class="navigation__item"><a href="/">Home</a></li>
-          <li class="navigation__item">
+        <ul class="navigation__list">
+          <li class="navigation__item small-btn"><a href="/">Home</a></li>
+          <li class="navigation__item small-btn">
             <a href="./blog.html" target="_blank">Blog</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item small-btn">
             <a href="./catalog.html" target="_blank">Catalog</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item small-btn">
             <a href="./contacts.html" target="_blank">Contact Us</a>
           </li>
         </ul>
       </nav>
       <div class="header__searching-and-links">
         <div class="searching">
-          <button class="searching__button">
-            <img src="#" alt="Search" />
+          <button class="searching__button square-image">
+            <img src="./images/searching.svg" alt="Search" />
           </button>
-          <input class="searching__input" type="search" />
+          <input class="searching__input" type="search" placeholder="Search" />
         </div>
         |
         <a
           href="https://null-smth.com/"
-          class="header-links__to-discord"
+          class="header-links__to-discord big-btn imaged-btn"
           target="_blank"
-          ><img src="#" alt="Discord" /> Discord</a
+          ><img src="./images/discord.svg" alt="Discord" class="square-image" />
+          Discord</a
         >
         <a
           href="https://null-smth.com/"
-          class="header-links__to-connect"
+          class="header-links__to-connect big-btn blue-btn imaged-btn"
           target="_blank"
-          ><img src="#" alt="Wallet" /> Connect</a
+          ><img src="./images/wallet.svg" alt="Wallet" class="square-image" />
+          Connect</a
         >
       </div>
     </header>
     <main>
       <section class="main">
-        <p class="main__highlight-text">With BINABOX explore NFT collection</p>
-        <h1 class="main__title">
-          We are the best way to check the rarity of NFT collection
-        </h1>
-        <div class="main__parameter-description">
+        <div class="main__container">
           <div>
-            <p class="parameter-description__highlight-text">2240+</p>
-            <p class="parameter-description__title">Total Iteam</p>
+            <p class="main__highlight-text">
+              With <span>BINABOX</span> explore NFT collection
+            </p>
+            <h1 class="main__title text">
+              We are the best way to check the rarity of NFT collection
+            </h1>
           </div>
-          <div>
-            <p class="parameter-description__highlight-text">1000+</p>
-            <p class="parameter-description__title">Profiles whitelisted</p>
+          <div class="main__parameter-description">
+            <div>
+              <p class="parameter-description__highlight-text">2240+</p>
+              <p class="parameter-description__title small-text">Total Iteam</p>
+            </div>
+            <div>
+              <p class="parameter-description__highlight-text">1000+</p>
+              <p class="parameter-description__title small-text">
+                Profiles whitelisted
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="main__main-buttons">
-          <a
-            href="https://null-smth.com/"
-            class="main-buttons__to-connect"
-            target="_blank"
-          >
-            Connect Wallet</a
-          >
-          <button class="main-buttons__to-wishlist">Whitelist now</button>
+          <div class="main__main-buttons">
+            <a
+              href="https://null-smth.com/"
+              class="main-buttons__to-connect big-btn blue-btn"
+              target="_blank"
+            >
+              Connect Wallet</a
+            >
+            <button class="main-buttons__to-wishlist big-btn">
+              Whitelist now
+            </button>
+          </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog section-container">
         <header class="catalog__controller">
           <div class="controller__controller-header">
-            <img class="controller-header__image" src="#" alt="field" />
+            <img
+              class="controller-header__image"
+              src="./images/file.svg"
+              alt="field"
+            />
             <h2 class="controller-header__title">Catalog</h2>
           </div>
           <div class="horizontal-divider"></div>
           <div class="controller__controller-buttons">
-            <button class="controller-buttons__button">See all</button>
+            <button class="controller-buttons__button big-btn">See all</button>
             |
-            <button class="controller-buttons__button">
-              <img src="#" alt="left arrow" />
+            <button class="controller-buttons__button square-btn">
+              <img
+                src="./images/left-arrow.svg"
+                alt="left arrow"
+                class="square-image"
+              />
             </button>
-            <button class="controller-buttons__button">
-              <img src="#" alt="right arrow" />
+            <button class="controller-buttons__button square-btn">
+              <img
+                src="./images/right-arrow.svg"
+                alt="right arrow"
+                class="square-image"
+              />
             </button>
           </div>
         </header>
@@ -99,11 +138,17 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card">
-              <img src="#" alt="product image" class="catolog-card__image" />
-              <span class="catolog-card__label">New</span>
-              <p class="catolog-card__price">$199</p>
-              <h3 class="catolog-card__name">Name product</h3>
+            <article class="catalog-cards__catolog-card card-container">
+              <img
+                src="./images/Skeleton.png"
+                alt="product image"
+                class="catolog-card__image"
+              />
+              <span class="catolog-card__label label">New</span>
+              <div>
+                <p class="catolog-card__price highlite-text">$199</p>
+                <h3 class="catolog-card__name small-text">Name product</h3>
+              </div>
             </article>
           </a>
           <a
@@ -111,11 +156,17 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card">
-              <img src="#" alt="product image" class="catolog-card__image" />
-              <span class="catolog-card__label">New</span>
-              <p class="catolog-card__price">$199</p>
-              <h3 class="catolog-card__name">Name product</h3>
+            <article class="catalog-cards__catolog-card card-container">
+              <img
+                src="./images/Skeleton.png"
+                alt="product image"
+                class="catolog-card__image"
+              />
+              <span class="catolog-card__label label">New</span>
+              <div>
+                <p class="catolog-card__price highlite-text">$199</p>
+                <h3 class="catolog-card__name small-text">Name product</h3>
+              </div>
             </article>
           </a>
           <a
@@ -123,11 +174,17 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card">
-              <img src="#" alt="product image" class="catolog-card__image" />
-              <span class="catolog-card__label">Sold Out</span>
-              <p class="catolog-card__price">$199</p>
-              <h3 class="catolog-card__name">Name product</h3>
+            <article class="catalog-cards__catolog-card card-container">
+              <img
+                src="./images/Skeleton.png"
+                alt="product image"
+                class="catolog-card__image"
+              />
+              <span class="catolog-card__label label red-label">Sold Out</span>
+              <div>
+                <p class="catolog-card__price highlite-text">$199</p>
+                <h3 class="catolog-card__name small-text">Name product</h3>
+              </div>
             </article>
           </a>
           <a
@@ -135,11 +192,17 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card">
-              <img src="#" alt="product image" class="catolog-card__image" />
-              <span class="catolog-card__label">New</span>
-              <p class="catolog-card__price">$199</p>
-              <h3 class="catolog-card__name">Name product</h3>
+            <article class="catalog-cards__catolog-card card-container">
+              <img
+                src="./images/Skeleton.png"
+                alt="product image"
+                class="catolog-card__image"
+              />
+              <span class="catolog-card__label label">New</span>
+              <div>
+                <p class="catolog-card__price highlite-text">$199</p>
+                <h3 class="catolog-card__name small-text">Name product</h3>
+              </div>
             </article>
           </a>
           <a
@@ -147,165 +210,231 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card">
-              <img src="#" alt="product image" class="catolog-card__image" />
-              <span class="catolog-card__label">New</span>
-              <p class="catolog-card__price">$199</p>
-              <h3 class="catolog-card__name">Name product</h3>
+            <article class="catalog-cards__catolog-card card-container">
+              <img
+                src="./images/Skeleton.png"
+                alt="product image"
+                class="catolog-card__image"
+              />
+              <span class="catolog-card__label label">New</span>
+              <div>
+                <p class="catolog-card__price highlite-text">$199</p>
+                <h3 class="catolog-card__name small-text">Name product</h3>
+              </div>
             </article>
           </a>
         </div>
       </section>
-      <section class="our-blog">
+      <section class="our-blog section-container">
         <h2 class="our-blog__title">Our blog</h2>
         <div class="our-blog__blog-viewer">
-          <article class="blog-viewer__blog-card">
-            <img class="blog-card__image" src="#" alt="field" />
-            <span class="blog-card__label">NFT</span>
-            <div class="blog-card__post-data">
-              <img src="#" alt="user" class="post-data__image" />
-              <span class="post-data__author">Tony Nguyen</span>
-              |
-              <img src="#" alt="calendar" class="post-data__calendar" />
-              <span class="post-data__author">20 Jun 2022</span>
+          <article class="blog-viewer__blog-card card-container">
+            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <span class="blog-card__label label">NFT</span>
+            <div>
+              <div class="blog-card__post-data">
+                <img
+                  src="./images/user.svg"
+                  alt="user"
+                  class="post-data__image"
+                />
+                <span class="post-data__author small-text">Tony Nguyen</span>
+                |
+                <img
+                  src="./images/calendar.svg"
+                  alt="calendar"
+                  class="post-data__calendar"
+                />
+                <span class="post-data__author small-text">20 Jun 2022</span>
+              </div>
+              <h3 class="blog-card__title">Sonic live</h3>
+              <p class="blog-card__text small-text">
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices
+                necnulla imperdiet...
+              </p>
+              <a
+                class="blog-card__button small-btn imaged-btn small-btn imaged-btnimaged-btn"
+                href="https://null-smth.com/"
+                target="_blank"
+              >
+                Read more
+                <img src="./images/right-arrow.svg" alt="right arrow" />
+              </a>
             </div>
-            <h3 class="blog-card__title">Sonic live</h3>
-            <p class="blog-card__text">
-              One September 22, 2021 A volutpat nulla eros, nulla ultrices
-              necnulla imperdiet...
-            </p>
-            <a
-              class="blog-card__button"
-              target="_blank"
-              href="https://null-smth.com/"
-            >
-              Read more
-              <img src="#" alt="right arrow" />
-            </a>
           </article>
-          <article class="blog-viewer__blog-card">
-            <img class="blog-card__image" src="#" alt="field" />
-            <span class="blog-card__label">NFT</span>
-            <div class="blog-card__post-data">
-              <img src="#" alt="user" class="post-data__image" />
-              <span class="post-data__author">Tony Nguyen</span>
-              |
-              <img src="#" alt="calendar" class="post-data__calendar" />
-              <span class="post-data__author">20 Jun 2022</span>
+          <article class="blog-viewer__blog-card card-container">
+            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <span class="blog-card__label label">NFT</span>
+            <div>
+              <div class="blog-card__post-data">
+                <img
+                  src="./images/user.svg"
+                  alt="user"
+                  class="post-data__image"
+                />
+                <span class="post-data__author small-text">Tony Nguyen</span>
+                |
+                <img
+                  src="./images/calendar.svg"
+                  alt="calendar"
+                  class="post-data__calendar"
+                />
+                <span class="post-data__author small-text">20 Jun 2022</span>
+              </div>
+              <h3 class="blog-card__title">Sonic live</h3>
+              <p class="blog-card__text small-text">
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices
+                necnulla imperdiet...
+              </p>
+              <a
+                class="blog-card__button small-btn imaged-btn"
+                href="https://null-smth.com/"
+                target="_blank"
+              >
+                Read more
+                <img src="./images/right-arrow.svg" alt="right arrow" />
+              </a>
             </div>
-            <h3 class="blog-card__title">Sonic live</h3>
-            <p class="blog-card__text">
-              One September 22, 2021 A volutpat nulla eros, nulla ultrices
-              necnulla imperdiet...
-            </p>
-            <a
-              class="blog-card__button"
-              target="_blank"
-              href="https://null-smth.com/"
-            >
-              Read more
-              <img src="#" alt="right arrow" />
-            </a>
           </article>
-          <article class="blog-viewer__blog-card">
-            <img class="blog-card__image" src="#" alt="field" />
-            <span class="blog-card__label">NFT</span>
-            <div class="blog-card__post-data">
-              <img src="#" alt="user" class="post-data__image" />
-              <span class="post-data__author">Tony Nguyen</span>
-              |
-              <img src="#" alt="calendar" class="post-data__calendar" />
-              <span class="post-data__author">20 Jun 2022</span>
+          <article class="blog-viewer__blog-card card-container">
+            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <span class="blog-card__label label">NFT</span>
+            <div>
+              <div class="blog-card__post-data">
+                <img
+                  src="./images/user.svg"
+                  alt="user"
+                  class="post-data__image"
+                />
+                <span class="post-data__author small-text">Tony Nguyen</span>
+                |
+                <img
+                  src="./images/calendar.svg"
+                  alt="calendar"
+                  class="post-data__calendar"
+                />
+                <span class="post-data__author small-text">20 Jun 2022</span>
+              </div>
+              <h3 class="blog-card__title">Sonic live</h3>
+              <p class="blog-card__text small-text">
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices
+                necnulla imperdiet...
+              </p>
+              <a
+                class="blog-card__button small-btn imaged-btn"
+                href="https://null-smth.com/"
+                target="_blank"
+              >
+                Read more
+                <img src="./images/right-arrow.svg" alt="right arrow" />
+              </a>
             </div>
-            <h3 class="blog-card__title">Sonic live</h3>
-            <p class="blog-card__text">
-              One September 22, 2021 A volutpat nulla eros, nulla ultrices
-              necnulla imperdiet...
-            </p>
-            <a
-              class="blog-card__button"
-              href="https://null-smth.com/"
-              target="_blank"
-            >
-              Read more
-              <img src="#" alt="right arrow" />
-            </a>
           </article>
-          <article class="blog-viewer__blog-card">
-            <img class="blog-card__image" src="#" alt="field" />
-            <span class="blog-card__label">NFT</span>
-            <div class="blog-card__post-data">
-              <img src="#" alt="user" class="post-data__image" />
-              <span class="post-data__author">Tony Nguyen</span>
-              |
-              <img src="#" alt="calendar" class="post-data__calendar" />
-              <span class="post-data__author">20 Jun 2022</span>
+          <article class="blog-viewer__blog-card card-container">
+            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <span class="blog-card__label label">NFT</span>
+            <div>
+              <div class="blog-card__post-data">
+                <img
+                  src="./images/user.svg"
+                  alt="user"
+                  class="post-data__image"
+                />
+                <span class="post-data__author small-text">Tony Nguyen</span>
+                |
+                <img
+                  src="./images/calendar.svg"
+                  alt="calendar"
+                  class="post-data__calendar"
+                />
+                <span class="post-data__author small-text">20 Jun 2022</span>
+              </div>
+              <h3 class="blog-card__title">Sonic live</h3>
+              <p class="blog-card__text small-text">
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices
+                necnulla imperdiet...
+              </p>
+              <a
+                class="blog-card__button small-btn imaged-btn"
+                href="https://null-smth.com/"
+                target="_blank"
+              >
+                Read more
+                <img src="./images/right-arrow.svg" alt="right arrow" />
+              </a>
             </div>
-            <h3 class="blog-card__title">Sonic live</h3>
-            <p class="blog-card__text">
-              One September 22, 2021 A volutpat nulla eros, nulla ultrices
-              necnulla imperdiet...
-            </p>
-            <a
-              class="blog-card__button"
-              href="https://null-smth.com/"
-              target="_blank"
-            >
-              Read more
-              <img src="#" alt="right arrow" />
-            </a>
           </article>
-          <article class="blog-viewer__blog-card">
-            <img class="blog-card__image" src="#" alt="field" />
-            <span class="blog-card__label">NFT</span>
-            <div class="blog-card__post-data">
-              <img src="#" alt="user" class="post-data__image" />
-              <span class="post-data__author">Tony Nguyen</span>
-              |
-              <img src="#" alt="calendar" class="post-data__calendar" />
-              <span class="post-data__author">20 Jun 2022</span>
+          <article class="blog-viewer__blog-card card-container">
+            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <span class="blog-card__label label">NFT</span>
+            <div>
+              <div class="blog-card__post-data">
+                <img
+                  src="./images/user.svg"
+                  alt="user"
+                  class="post-data__image"
+                />
+                <span class="post-data__author small-text">Tony Nguyen</span>
+                |
+                <img
+                  src="./images/calendar.svg"
+                  alt="calendar"
+                  class="post-data__calendar"
+                />
+                <span class="post-data__author small-text">20 Jun 2022</span>
+              </div>
+              <h3 class="blog-card__title">Sonic live</h3>
+              <p class="blog-card__text small-text">
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices
+                necnulla imperdiet...
+              </p>
+              <a
+                class="blog-card__button small-btn imaged-btn"
+                href="https://null-smth.com/"
+                target="_blank"
+              >
+                Read more
+                <img src="./images/right-arrow.svg" alt="right arrow" />
+              </a>
             </div>
-            <h3 class="blog-card__title">Sonic live</h3>
-            <p class="blog-card__text">
-              One September 22, 2021 A volutpat nulla eros, nulla ultrices
-              necnulla imperdiet...
-            </p>
-            <a
-              class="blog-card__button"
-              href="https://null-smth.com/"
-              target="_blank"
-            >
-              Read more
-              <img src="#" alt="right arrow" />
-            </a>
           </article>
-          <article class="blog-viewer__blog-card">
-            <img class="blog-card__image" src="#" alt="field" />
-            <span class="blog-card__label">NFT</span>
-            <div class="blog-card__post-data">
-              <img src="#" alt="user" class="post-data__image" />
-              <span class="post-data__author">Tony Nguyen</span>
-              |
-              <img src="#" alt="calendar" class="post-data__calendar" />
-              <span class="post-data__author">20 Jun 2022</span>
+          <article class="blog-viewer__blog-card card-container">
+            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <span class="blog-card__label label">NFT</span>
+            <div>
+              <div class="blog-card__post-data">
+                <img
+                  src="./images/user.svg"
+                  alt="user"
+                  class="post-data__image"
+                />
+                <span class="post-data__author small-text">Tony Nguyen</span>
+                |
+                <img
+                  src="./images/calendar.svg"
+                  alt="calendar"
+                  class="post-data__calendar"
+                />
+                <span class="post-data__author small-text">20 Jun 2022</span>
+              </div>
+              <h3 class="blog-card__title">Sonic live</h3>
+              <p class="blog-card__text small-text">
+                One September 22, 2021 A volutpat nulla eros, nulla ultrices
+                necnulla imperdiet...
+              </p>
+              <a
+                class="blog-card__button small-btn imaged-btn"
+                href="https://null-smth.com/"
+                target="_blank"
+              >
+                Read more
+                <img src="./images/right-arrow.svg" alt="right arrow" />
+              </a>
             </div>
-            <h3 class="blog-card__title">Sonic live</h3>
-            <p class="blog-card__text">
-              One September 22, 2021 A volutpat nulla eros, nulla ultrices
-              necnulla imperdiet...
-            </p>
-            <a
-              class="blog-card__button"
-              href="https://null-smth.com/"
-              target="_blank"
-            >
-              Read more
-              <img src="#" alt="right arrow" />
-            </a>
           </article>
         </div>
         <a
-          class="our-blog__button"
+          class="our-blog__button big-btn"
           href="https://null-smth.com/"
           target="_blank"
           >Read more</a
