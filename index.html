@@ -29,14 +29,16 @@
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list">
-          <li class="navigation__item small-btn"><a href="/">Home</a></li>
-          <li class="navigation__item small-btn">
+          <li class="navigation__item btn btn__navigation">
+            <a href="/">Home</a>
+          </li>
+          <li class="navigation__item btn btn__navigation">
             <a href="./blog.html" target="_blank">Blog</a>
           </li>
-          <li class="navigation__item small-btn">
+          <li class="navigation__item btn btn__navigation">
             <a href="./catalog.html" target="_blank">Catalog</a>
           </li>
-          <li class="navigation__item small-btn">
+          <li class="navigation__item btn btn__navigation">
             <a href="./contacts.html" target="_blank">Contact Us</a>
           </li>
         </ul>
@@ -51,14 +53,14 @@
         |
         <a
           href="https://null-smth.com/"
-          class="header-links__to-discord big-btn imaged-btn"
+          class="header-links__to-discord btn btn"
           target="_blank"
           ><img src="./images/discord.svg" alt="Discord" class="square-image" />
           Discord</a
         >
         <a
           href="https://null-smth.com/"
-          class="header-links__to-connect big-btn blue-btn imaged-btn"
+          class="header-links__to-connect btn btn__blue btn"
           target="_blank"
           ><img src="./images/wallet.svg" alt="Wallet" class="square-image" />
           Connect</a
@@ -70,7 +72,8 @@
         <div class="main__container">
           <div>
             <p class="main__highlight-text">
-              With <span>BINABOX</span> explore NFT collection
+              With <span class="highlight-text__span">BINABOX</span> explore NFT
+              collection
             </p>
             <h1 class="main__title text">
               We are the best way to check the rarity of NFT collection
@@ -79,11 +82,13 @@
           <div class="main__parameter-description">
             <div>
               <p class="parameter-description__highlight-text">2240+</p>
-              <p class="parameter-description__title small-text">Total Iteam</p>
+              <p class="parameter-description__title text text__small">
+                Total Iteam
+              </p>
             </div>
             <div>
               <p class="parameter-description__highlight-text">1000+</p>
-              <p class="parameter-description__title small-text">
+              <p class="parameter-description__title text text__small">
                 Profiles whitelisted
               </p>
             </div>
@@ -91,18 +96,16 @@
           <div class="main__main-buttons">
             <a
               href="https://null-smth.com/"
-              class="main-buttons__to-connect big-btn blue-btn"
+              class="main-buttons__to-connect btn btn__blue"
               target="_blank"
             >
               Connect Wallet</a
             >
-            <button class="main-buttons__to-wishlist big-btn">
-              Whitelist now
-            </button>
+            <button class="main-buttons__to-wishlist btn">Whitelist now</button>
           </div>
         </div>
       </section>
-      <section class="catalog section-container">
+      <section class="catalog container__section">
         <header class="catalog__controller">
           <div class="controller__controller-header">
             <img
@@ -114,20 +117,20 @@
           </div>
           <div class="horizontal-divider"></div>
           <div class="controller__controller-buttons">
-            <button class="controller-buttons__button big-btn">See all</button>
+            <button class="controller-buttons__button btn">See all</button>
             |
-            <button class="controller-buttons__button square-btn">
+            <button class="controller-buttons__button btn btn__square">
               <img
                 src="./images/left-arrow.svg"
                 alt="left arrow"
-                class="square-image"
+                class="square-image square-image__arrow"
               />
             </button>
-            <button class="controller-buttons__button square-btn">
+            <button class="controller-buttons__button btn btn__square">
               <img
                 src="./images/right-arrow.svg"
                 alt="right arrow"
-                class="square-image"
+                class="square-image square-image__arrow"
               />
             </button>
           </div>
@@ -138,7 +141,7 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card card-container">
+            <article class="catalog-cards__catolog-card container__card">
               <img
                 src="./images/Skeleton.png"
                 alt="product image"
@@ -147,7 +150,9 @@
               <span class="catolog-card__label label">New</span>
               <div>
                 <p class="catolog-card__price highlite-text">$199</p>
-                <h3 class="catolog-card__name small-text">Name product</h3>
+                <h3 class="catolog-card__name text text__small">
+                  Name product
+                </h3>
               </div>
             </article>
           </a>
@@ -156,7 +161,7 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card card-container">
+            <article class="catalog-cards__catolog-card container__card">
               <img
                 src="./images/Skeleton.png"
                 alt="product image"
@@ -165,7 +170,9 @@
               <span class="catolog-card__label label">New</span>
               <div>
                 <p class="catolog-card__price highlite-text">$199</p>
-                <h3 class="catolog-card__name small-text">Name product</h3>
+                <h3 class="catolog-card__name text text__small">
+                  Name product
+                </h3>
               </div>
             </article>
           </a>
@@ -174,16 +181,18 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card card-container">
+            <article class="catalog-cards__catolog-card container__card">
               <img
                 src="./images/Skeleton.png"
                 alt="product image"
                 class="catolog-card__image"
               />
-              <span class="catolog-card__label label red-label">Sold Out</span>
+              <span class="catolog-card__label label label__red">Sold Out</span>
               <div>
                 <p class="catolog-card__price highlite-text">$199</p>
-                <h3 class="catolog-card__name small-text">Name product</h3>
+                <h3 class="catolog-card__name text text__small">
+                  Name product
+                </h3>
               </div>
             </article>
           </a>
@@ -192,25 +201,7 @@
             class="catalog-cards__link"
             target="_blank"
           >
-            <article class="catalog-cards__catolog-card card-container">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price highlite-text">$199</p>
-                <h3 class="catolog-card__name small-text">Name product</h3>
-              </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card card-container">
+            <article class="catalog-cards__catolog-card container__card">
               <img
                 src="./images/Skeleton.png"
                 alt="product image"
@@ -219,16 +210,38 @@
               <span class="catolog-card__label label">New</span>
               <div>
                 <p class="catolog-card__price highlite-text">$199</p>
-                <h3 class="catolog-card__name small-text">Name product</h3>
+                <h3 class="catolog-card__name text text__small">
+                  Name product
+                </h3>
+              </div>
+            </article>
+          </a>
+          <a
+            href="https://null-smth.com/"
+            class="catalog-cards__link"
+            target="_blank"
+          >
+            <article class="catalog-cards__catolog-card container__card">
+              <img
+                src="./images/Skeleton.png"
+                alt="product image"
+                class="catolog-card__image"
+              />
+              <span class="catolog-card__label label">New</span>
+              <div>
+                <p class="catolog-card__price highlite-text">$199</p>
+                <h3 class="catolog-card__name text text__small">
+                  Name product
+                </h3>
               </div>
             </article>
           </a>
         </div>
       </section>
-      <section class="our-blog section-container">
+      <section class="our-blog container__section">
         <h2 class="our-blog__title">Our blog</h2>
         <div class="our-blog__blog-viewer">
-          <article class="blog-viewer__blog-card card-container">
+          <article class="blog-viewer__blog-card container__card">
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -238,22 +251,26 @@
                   alt="user"
                   class="post-data__image"
                 />
-                <span class="post-data__author small-text">Tony Nguyen</span>
+                <span class="post-data__author text text__small"
+                  >Tony Nguyen</span
+                >
                 |
                 <img
                   src="./images/calendar.svg"
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author small-text">20 Jun 2022</span>
+                <span class="post-data__author text text__small"
+                  >20 Jun 2022</span
+                >
               </div>
               <h3 class="blog-card__title">Sonic live</h3>
-              <p class="blog-card__text small-text">
+              <p class="blog-card__text text text__small">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices
                 necnulla imperdiet...
               </p>
               <a
-                class="blog-card__button small-btn imaged-btn small-btn imaged-btnimaged-btn"
+                class="blog-card__button btn btn__navigation btn btn btn__navigation btnbtn"
                 href="https://null-smth.com/"
                 target="_blank"
               >
@@ -262,7 +279,7 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card card-container">
+          <article class="blog-viewer__blog-card container__card">
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -272,22 +289,26 @@
                   alt="user"
                   class="post-data__image"
                 />
-                <span class="post-data__author small-text">Tony Nguyen</span>
+                <span class="post-data__author text text__small"
+                  >Tony Nguyen</span
+                >
                 |
                 <img
                   src="./images/calendar.svg"
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author small-text">20 Jun 2022</span>
+                <span class="post-data__author text text__small"
+                  >20 Jun 2022</span
+                >
               </div>
               <h3 class="blog-card__title">Sonic live</h3>
-              <p class="blog-card__text small-text">
+              <p class="blog-card__text text text__small">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices
                 necnulla imperdiet...
               </p>
               <a
-                class="blog-card__button small-btn imaged-btn"
+                class="blog-card__button btn btn__navigation btn"
                 href="https://null-smth.com/"
                 target="_blank"
               >
@@ -296,7 +317,7 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card card-container">
+          <article class="blog-viewer__blog-card container__card">
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -306,22 +327,26 @@
                   alt="user"
                   class="post-data__image"
                 />
-                <span class="post-data__author small-text">Tony Nguyen</span>
+                <span class="post-data__author text text__small"
+                  >Tony Nguyen</span
+                >
                 |
                 <img
                   src="./images/calendar.svg"
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author small-text">20 Jun 2022</span>
+                <span class="post-data__author text text__small"
+                  >20 Jun 2022</span
+                >
               </div>
               <h3 class="blog-card__title">Sonic live</h3>
-              <p class="blog-card__text small-text">
+              <p class="blog-card__text text text__small">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices
                 necnulla imperdiet...
               </p>
               <a
-                class="blog-card__button small-btn imaged-btn"
+                class="blog-card__button btn btn__navigation btn"
                 href="https://null-smth.com/"
                 target="_blank"
               >
@@ -330,7 +355,7 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card card-container">
+          <article class="blog-viewer__blog-card container__card">
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -340,22 +365,26 @@
                   alt="user"
                   class="post-data__image"
                 />
-                <span class="post-data__author small-text">Tony Nguyen</span>
+                <span class="post-data__author text text__small"
+                  >Tony Nguyen</span
+                >
                 |
                 <img
                   src="./images/calendar.svg"
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author small-text">20 Jun 2022</span>
+                <span class="post-data__author text text__small"
+                  >20 Jun 2022</span
+                >
               </div>
               <h3 class="blog-card__title">Sonic live</h3>
-              <p class="blog-card__text small-text">
+              <p class="blog-card__text text text__small">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices
                 necnulla imperdiet...
               </p>
               <a
-                class="blog-card__button small-btn imaged-btn"
+                class="blog-card__button btn btn__navigation btn"
                 href="https://null-smth.com/"
                 target="_blank"
               >
@@ -364,7 +393,7 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card card-container">
+          <article class="blog-viewer__blog-card container__card">
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -374,22 +403,26 @@
                   alt="user"
                   class="post-data__image"
                 />
-                <span class="post-data__author small-text">Tony Nguyen</span>
+                <span class="post-data__author text text__small"
+                  >Tony Nguyen</span
+                >
                 |
                 <img
                   src="./images/calendar.svg"
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author small-text">20 Jun 2022</span>
+                <span class="post-data__author text text__small"
+                  >20 Jun 2022</span
+                >
               </div>
               <h3 class="blog-card__title">Sonic live</h3>
-              <p class="blog-card__text small-text">
+              <p class="blog-card__text text text__small">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices
                 necnulla imperdiet...
               </p>
               <a
-                class="blog-card__button small-btn imaged-btn"
+                class="blog-card__button btn btn__navigation btn"
                 href="https://null-smth.com/"
                 target="_blank"
               >
@@ -398,7 +431,7 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card card-container">
+          <article class="blog-viewer__blog-card container__card">
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -408,22 +441,26 @@
                   alt="user"
                   class="post-data__image"
                 />
-                <span class="post-data__author small-text">Tony Nguyen</span>
+                <span class="post-data__author text text__small"
+                  >Tony Nguyen</span
+                >
                 |
                 <img
                   src="./images/calendar.svg"
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author small-text">20 Jun 2022</span>
+                <span class="post-data__author text text__small"
+                  >20 Jun 2022</span
+                >
               </div>
               <h3 class="blog-card__title">Sonic live</h3>
-              <p class="blog-card__text small-text">
+              <p class="blog-card__text text text__small">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices
                 necnulla imperdiet...
               </p>
               <a
-                class="blog-card__button small-btn imaged-btn"
+                class="blog-card__button btn btn__navigation btn"
                 href="https://null-smth.com/"
                 target="_blank"
               >
@@ -434,461 +471,516 @@
           </article>
         </div>
         <a
-          class="our-blog__button big-btn"
+          class="our-blog__button btn"
           href="https://null-smth.com/"
           target="_blank"
           >Read more</a
         >
       </section>
-      <section class="about-us">
-        <h2 class="about-us__title">About us</h2>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat
-          non proident, sunt in culpa qui officia dese runt mollit anim id est
-          laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
-          occaecat
-        </p>
+      <section class="about-us container__section">
+        <div class="about-us__description-container">
+          <h2 class="about-us__title">About us</h2>
+          <p class="about-us__description text__small">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat
+            cupidatat non proident, sunt in culpa qui officia dese runt mollit
+            anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu
+            epteur sint occaecat
+          </p>
+        </div>
         <ol class="about-us__about-viewer">
-          <li class="about-viewer__about-card">
+          <li class="about-viewer__about-card container__card">
             <h3 class="about-card__title">High quality</h3>
-            <p class="about-card__text">
+            <p class="about-card__text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li class="about-viewer__about-card">
+          <li class="about-viewer__about-card container__card">
             <h3 class="about-card__title">Big collection</h3>
-            <p class="about-card__text">
+            <p class="about-card__text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li class="about-viewer__about-card">
+          <li class="about-viewer__about-card container__card">
             <h3 class="about-card__title">Top Resourse</h3>
-            <p class="about-card__text">
+            <p class="about-card__text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li class="about-viewer__about-card">
+          <li class="about-viewer__about-card container__card">
             <h3 class="about-card__title">Big community</h3>
-            <p class="about-card__text">
+            <p class="about-card__text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
         </ol>
         <a
-          class="about-us__button"
+          class="about-us__button btn"
           href="https://null-smth.com/"
           target="_blank"
           >Read more</a
         >
       </section>
-      <section class="our-team">
+      <section class="our-team container__section">
         <h2 class="our-team__title">Our team</h2>
         <div class="our-team__team-viewer">
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__job">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__text">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__job">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__job">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__job">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__job">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
-          <article class="our-team__card">
-            <img class="our-team__image" src="#" alt="avatar" />
-            <h3 class="our-team__name">Jason Smith</h3>
-            <p class="our-team__job">Co - Founder</p>
+          <article class="our-team__card container__card">
+            <img
+              class="our-team__image"
+              src="./images/avatar.png"
+              alt="avatar"
+            />
+            <div class="our-team__description">
+              <h3 class="our-team__name">Jason Smith</h3>
+              <p class="our-team__job text__small">Co - Founder</p>
+            </div>
             <ul class="our-team__socials">
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Twitter"
+                  ><img src="./images/twitter.svg" alt="Twitter"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Facebook"
+                  ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="Telegram"
+                  ><img src="./images/telegram.svg" alt="Telegram"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
-                  ><img src="#" alt="LinkedIn"
+                  ><img src="./images/linkedin.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li>
                 <a
                   href="https://null-smth.com/"
-                  class="socials__to-connect"
+                  class="socials__to-connect btn btn__square"
                   target="_blank"
                 >
-                  <img src="#" alt="Instagram"
+                  <img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
             </ul>
           </article>
         </div>
       </section>
-      <section class="faqs">
+      <section class="faqs container__section">
         <h2 class="faqs__title">FAQs</h2>
-        <details class="faqs__details">
+        <details class="faqs__details container__card">
           <summary class="faqs__summary">
             <h3>What are the NFTs?</h3>
-            <button class="faqs__control-button">
-              <img src="#" alt="show button" />
-            </button>
           </summary>
-          Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
-          Nulla dapibus urna volutpat venenatis, risus faucibus.
+          <p class="faqs__answer">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
-        <details class="faqs__details">
+        <details class="faqs__details container__card">
           <summary class="faqs__summary">
             <h3>How do i get NFTs?</h3>
-            <button class="faqs__control-button">
-              <img src="#" alt="show button" />
-            </button>
           </summary>
           Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
           Nulla dapibus urna volutpat venenatis, risus faucibus.
         </details>
-        <details class="faqs__details">
+        <details class="faqs__details container__card">
           <summary class="faqs__summary">
             <h3>How can we buy your NFTs?</h3>
-            <button class="faqs__control-button">
-              <img src="#" alt="show button" />
-            </button>
           </summary>
+          Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+          Nulla dapibus urna volutpat venenatis, risus faucibus.
         </details>
-        <details class="faqs__details">
+        <details class="faqs__details container__card">
           <summary class="faqs__summary">
             <h3>Who are the team behind the project?</h3>
-            <button class="faqs__control-button">
-              <img src="#" alt="show button" />
-            </button>
           </summary>
+          Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+          Nulla dapibus urna volutpat venenatis, risus faucibus.
         </details>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container__section">
       <div class="footer__footer-description">
         <div class="footer-description">
           <a class="footer-description__link" href="/"
             ><img src="./images/dark-logo.svg" alt="Логотип"
           /></a>
-          <p class="footer-description__text">
+          <p class="footer-description__text text__footer">
             We are the best way to check the rarity of NFT collection.
           </p>
         </div>
         <div class="footer__footer-column">
           <h3 class="footer-column__title">Subscribe</h3>
           <ul class="footer-column__column">
-            <li class="footer-column__item"><a href="/">Home</a></li>
             <li class="footer-column__item">
-              <a href="./blog.html" target="_blank">Blog</a>
+              <a href="/" class="btn__navigation footer-column__link">Home</a>
             </li>
             <li class="footer-column__item">
-              <a href="./catalog.html" target="_blank">Catalog</a>
+              <a
+                href="./blog.html"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Blog</a
+              >
             </li>
             <li class="footer-column__item">
-              <a href="./contacts.html" target="_blank">Contact Us</a>
+              <a
+                href="./catalog.html"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Catalog</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a
+                href="./contacts.html"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
@@ -896,51 +988,93 @@
           <h3 class="footer-column__title">Company</h3>
           <ul class="footer-column__column">
             <li class="footer-column__item">
-              <a href="#" target="_blank">Terms Canditions</a>
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Terms Canditions</a
+              >
             </li>
             <li class="footer-column__item">
-              <a href="#" target="_blank">Privacy Policy</a>
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Privacy Policy</a
+              >
             </li>
             <li class="footer-column__item">
-              <a href="#" target="_blank">Whitepaper</a>
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Whitepaper</a
+              >
             </li>
             <li class="footer-column__item">
-              <a href="#" target="_blank">Help Center</a>
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Help Center</a
+              >
             </li>
           </ul>
         </div>
       </div>
       <div class="footer__socials">
-        <p class="footer-link__copyright">BINABOX 2022 - ALL rights reserved</p>
+        <p class="footer-link__copyright text__footer">
+          BINABOX 2022 - ALL rights reserved
+        </p>
         <ul class="socials__list">
           <li>
-            <a href="#" class="socials__to-connect" target="_blank"
-              ><img src="#" alt="Twitter"
+            <a
+              href="#"
+              class="socials__to-connect btn btn__square"
+              target="_blank"
+              ><img src="./images/twitter.svg" alt="Twitter"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect" target="_blank"
-              ><img src="#" alt="Facebook"
+            <a
+              href="#"
+              class="socials__to-connect btn btn__square"
+              target="_blank"
+              ><img src="./images/facebook.svg" alt="Facebook"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect" target="_blank"
-              ><img src="#" alt="Telegram"
+            <a
+              href="#"
+              class="socials__to-connect btn btn__square"
+              target="_blank"
+              ><img src="./images/telegram.svg" alt="Telegram"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect" target="_blank"
-              ><img src="#" alt="YouTube"
+            <a
+              href="#"
+              class="socials__to-connect btn btn__square"
+              target="_blank"
+              ><img src="./images/youtube.svg" alt="YouTube"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect" target="_blank">
-              <img src="#" alt="Tik Tok"
+            <a
+              href="#"
+              class="socials__to-connect btn btn__square"
+              target="_blank"
+            >
+              <img src="./images/tiktok.svg" alt="Tik Tok"
             /></a>
           </li>
           <li>
-            <a href="#" class="socials__to-connect" target="_blank">
-              <img src="#" alt="Discord" />
+            <a
+              href="#"
+              class="socials__to-connect btn btn__square"
+              target="_blank"
+            >
+              <img src="./images/discord.svg" alt="Discord" />
             </a>
           </li>
         </ul>
