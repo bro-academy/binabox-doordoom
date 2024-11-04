@@ -153,6 +153,20 @@ button {
   align-items: center;
   padding: 2.188rem 2rem;
 }
+.header__logo {
+  display: flex;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+.header__title {
+  font-family: "Bakbak One", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.header__logo-image {
+  height: 2.5rem;
+}
 .header__navigation {
   padding: 0;
   height: fit-content;
@@ -164,10 +178,10 @@ button {
 .navigation__item {
   display: flex;
 }
-.navigation__item.btn__link {
+.navigation__item {
   border-bottom: 0.15rem solid transparent;
 }
-.navigation__item.btn__link:hover {
+.navigation__item:hover {
   border-color: #0265dc;
 }
 .header__searching-and-links {
@@ -206,6 +220,11 @@ button {
 
 .main {
   padding: 8.813rem 12.5rem;
+  background: radial-gradient(
+    42.5% 42.5% at 22.28% -4.22%,
+    rgba(2, 101, 220, 0.5) 0%,
+    rgba(2, 101, 220, 0) 100%
+  );
 }
 .main__container {
   width: 52%;
@@ -222,6 +241,11 @@ button {
   font-family: "Bakbak One", Arial, sans-serif;
   margin: 0 0 0.5rem 0;
 }
+
+.main__title {
+  font-size: 1.25rem;
+}
+
 .highlight-text__span {
   color: #0265dc;
 }
@@ -279,6 +303,7 @@ button {
 .catalog__catalog-cards {
   display: flex;
   gap: 1.5rem;
+  overflow: hidden;
 }
 
 .catolog-card__image {
@@ -498,6 +523,21 @@ button {
   font-size: 0.875rem;
   line-height: 1.25rem;
   padding-bottom: 2rem;
+}
+.footer-description__link {
+  display: flex;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+.footer-description__title {
+  font-family: "Bakbak One", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #0265dc;
+}
+.footer-description__logo-image {
+  height: 2.5rem;
 }
 .footer__footer-description {
   display: flex;
