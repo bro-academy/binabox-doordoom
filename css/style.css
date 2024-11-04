@@ -92,7 +92,7 @@ button {
   cursor: pointer;
 }
 
-.btn__blue {
+.btn__wallet {
   background-color: #0265dc;
 }
 
@@ -102,7 +102,7 @@ button {
   line-height: 1.5rem;
   border: none;
 }
-.btn__square {
+.btn__socials-and-arrows {
   padding: 0.75rem 0.75rem;
   align-items: center;
   min-height: 1.5rem;
@@ -120,7 +120,7 @@ button {
   top: 2.5rem;
   right: 2.5rem;
 }
-.label__red {
+.label__sold-out {
   background: #ea3829;
   color: #f5f8fb;
 }
@@ -326,11 +326,11 @@ button {
   gap: 2rem;
 }
 
-.blog-viewer__blog-card:nth-child(4n + 1) {
+.blog-viewer__blog-card.big {
   grid-row: span 2;
 }
 
-.blog-viewer__blog-card:not(:nth-child(4n + 1)) > img {
+.blog-card__image.small {
   height: 10.875rem;
 }
 
