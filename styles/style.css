@@ -10,6 +10,7 @@ a {
   color: inherit;
   text-decoration: inherit;
   padding: 0;
+  border: 0.25rem solid transparent;
 }
 
 .heading,
@@ -63,7 +64,7 @@ a {
   align-items: center;
 }
 .container__card {
-  padding: 1.5rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -254,6 +255,55 @@ a {
   align-items: start;
 }
 
+.field:hover {
+  border: solid 0.1rem #3892f3;
+}
+
+.field:focus {
+  border: solid 0.15rem #3892f3;
+}
+
+.link {
+  border: 0.1rem solid transparent;
+}
+
+.link:hover {
+  color: #3892f3;
+}
+
+.link:focus {
+  border: solid 0.15rem #3892f3;
+}
+
+.link:active {
+  color: #0054b6;
+}
+
+.behavior__link {
+  border: 0.25rem solid transparent;
+}
+
+.behavior__link:focus {
+  border: 0.25rem solid #3892f3;
+}
+
+.behavior__card {
+  border: 0.25rem solid transparent;
+}
+
+.behavior__card:hover {
+  border-image: linear-gradient(
+      -50deg,
+      #0265dc,
+      transparent 6%,
+      transparent 95%,
+      #0265dc
+    )
+    1;
+  border-width: 0.25rem;
+  border-style: solid;
+}
+
 .header {
   justify-content: space-between;
   padding: 2.188rem 2rem;
@@ -276,12 +326,16 @@ a {
   height: fit-content;
 }
 
-.navigation__item {
+.navigation__link {
   border-bottom: 0.15rem solid transparent;
 }
-.navigation__item:hover {
+.navigation__link:hover {
   border-bottom: 0.15rem solid #0265dc;
 }
+.navigation__link:focus {
+  background-color: #bfc5ee1f;
+}
+
 .header__searching-and-links {
   gap: 16px;
   font-size: 1.5rem;
@@ -295,28 +349,29 @@ a {
 
 .searching__button {
   padding: 0;
+  border: solid 0.1rem transparent;
+  cursor: pointer;
+  margin-right: 0.5rem;
 }
 
 .searching__input {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
-  width: 8.25rem;
-  padding: 0;
+  width: 11.75rem;
+  padding: 0.75rem;
+  padding-left: 2.75rem;
   outline: none;
   color: #f5f8fb;
   font-size: 0.875rem;
   background-color: #0d0d15;
-  border: none;
+  border: 0.1rem solid #d0d7fb2b;
+  background: url("../images/searching.svg") no-repeat left;
+  background-size: 1.5rem;
+  background-position-x: 0.75rem;
 }
 
 .searching__input::placeholder {
   color: #e7eef7a8;
-}
-
-.searching__button {
-  cursor: pointer;
-  margin-right: 0.5rem;
-  border: none;
 }
 
 .main {
@@ -387,6 +442,71 @@ a {
 .catalog__catalog-cards {
   gap: 1.5rem;
   overflow: hidden;
+}
+
+.catalog-cards__list-item {
+  position: relative;
+}
+
+.catalog-cards__catalog-options {
+  display: none;
+}
+.catalog-cards__list-item:hover .catalog-cards__catalog-options {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  width: 97%;
+  background-color: #0d0d1540;
+  vertical-align: middle;
+  border-image: linear-gradient(
+      -50deg,
+      #0265dc,
+      transparent 6%,
+      transparent 95%,
+      #0265dc
+    )
+    1;
+  border-width: 0.25rem;
+  border-style: solid;
+}
+
+.catalog-options__list {
+  gap: 1.5rem;
+  padding: 0 2rem 0 1.25rem;
+  width: 100%;
+}
+
+.catalog-options__favorites {
+  width: 100%;
+  color: #0d0d15;
+  background-color: #ffffff;
+}
+
+.catalog-options__buy {
+  display: flex;
+  padding: 0.625rem 0;
+  width: 100%;
+  border-right: 0;
+  border-left: 0;
+  justify-content: center;
+}
+
+.catalog-options__buy:hover {
+  border-right: 0;
+  border-left: 0;
+}
+
+.catalog-options__buy:focus {
+  border-right: 0;
+  border-left: 0;
+}
+
+.catalog-cards__link {
+  font-size: 0;
+  padding: 0;
+  border: 0;
 }
 
 .catolog-card__image {
@@ -502,7 +622,7 @@ a {
 }
 
 .our-team__card {
-  padding: 1.75rem;
+  padding: 1.5rem;
   gap: 1rem;
 }
 
@@ -525,7 +645,7 @@ a {
 
 .socials__to-connect {
   border: 0.1rem solid transparent;
-  padding: 0.44rem;
+  padding: 0.4rem;
 }
 
 .faqs {
@@ -544,9 +664,15 @@ a {
 
 .faqs__summary::after {
   content: "+";
-  font-size: 1.5em;
+  line-height: 2rem;
+  width: 2rem;
+  text-align: center;
+  vertical-align: bottom;
   display: inline-block;
-  margin-right: 8px;
+}
+
+.faqs__summary:hover::after {
+  background: #bfc5ee1f;
 }
 
 .faqs__details[open] .faqs__summary {
@@ -743,6 +869,7 @@ a {
 }
 .footer-description__link {
   text-transform: uppercase;
+  width: fit-content;
   gap: 1rem;
 }
 .footer-description__title {
@@ -758,6 +885,7 @@ a {
 .footer__footer-description {
   width: 100%;
   gap: 1.5rem;
+  align-items: start;
 }
 .footer-description {
   flex-grow: 3;

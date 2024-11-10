@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header list">
-      <a href="/" class="header__logo list" target="_blank">
+      <a href="/" class="header__logo list behavior__link" target="_blank">
         <img
           src="./images/small-logo.svg"
           alt="Logo"
@@ -33,27 +33,41 @@
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list list">
-          <li class="navigation__item btn btn__navigation">
-            <a href="/" target="_blank">Home</a>
+          <li class="navigation__item">
+            <a class="navigation__link btn btn__navigation" href="/">Home</a>
           </li>
-          <li class="navigation__item btn btn__navigation">
-            <a href="./blog.html">Blog</a>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./blog.html"
+              target="_blank"
+              >Blog</a
+            >
           </li>
-          <li class="navigation__item btn btn__navigation">
-            <a href="./catalog.html" target="_blank">Catalog</a>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./catalog.html"
+              target="_blank"
+              >Catalog</a
+            >
           </li>
-          <li class="navigation__item btn btn__navigation">
-            <a href="./contacts.html" target="_blank">Contact Us</a>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./contacts.html"
+              target="_blank"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </nav>
       <div class="header__searching-and-links list">
-        <div class="searching list">
-          <button class="searching__button square-image btn">
-            <img src="./images/searching.svg" alt="Search" />
-          </button>
-          <input class="searching__input" type="search" placeholder="Search" />
-        </div>
+        <input
+          class="searching__input field"
+          type="search"
+          placeholder="Search"
+        />
         |
         <a
           href="https://null-smth.com/"
@@ -249,7 +263,7 @@
           <p class="blog-post__paragraph paragraph">
             The Basilisks that <span class="paragraph__highlite">players</span> collect are represented with
             NFTs on Ethereum’s blockchain with real-world value. Players use the
-            <a href="https://null-smth.com/" target="_blank" class="paragraph__link">
+            <a href="https://null-smth.com/" target="_blank" class="paragraph__link link">
               Basilisks they have
             </a>
             gathered to battle other players to win ether (ETH). In Balthazar
@@ -273,7 +287,7 @@
                 In Balthazar Dragons, players are immersed in a 3D open world to
                 explore and capture dragon-like beasts called Basilisks.
                 Balthazar Dragons is an upcoming fantasy role-playing
-                <a href="https://null-smth.com/" target="_blank"  class="paragraph__link">
+                <a href="https://null-smth.com/" target="_blank"  class="paragraph__link link">
                   game developed
                 </a>
                 on the Ethereum blockchain by a decentralized autonomous
@@ -376,7 +390,7 @@
     <footer class="footer container__section">
       <div class="footer__footer-description list">
         <div class="footer-description ">
-          <a class="footer-description__link list" href="/" target="_blank">
+          <a class="footer-description__link list behavior__link" href="/" target="_blank">
             <img
               src="./images/small-logo.svg"
               alt="Logo"

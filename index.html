@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header list">
-      <a href="/" class="header__logo">
+      <a href="/" class="header__logo behavior__link">
         <img
           src="./images/small-logo.svg"
           alt="Logo"
@@ -30,27 +30,41 @@
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list list">
-          <li class="navigation__item btn btn__navigation">
-            <a href="/">Home</a>
+          <li class="navigation__item">
+            <a class="navigation__link btn btn__navigation" href="/">Home</a>
           </li>
-          <li class="navigation__item btn btn__navigation">
-            <a href="./blog.html" target="_blank">Blog</a>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./blog.html"
+              target="_blank"
+              >Blog</a
+            >
           </li>
-          <li class="navigation__item btn btn__navigation">
-            <a href="./catalog.html" target="_blank">Catalog</a>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./catalog.html"
+              target="_blank"
+              >Catalog</a
+            >
           </li>
-          <li class="navigation__item btn btn__navigation">
-            <a href="./contacts.html" target="_blank">Contact Us</a>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./contacts.html"
+              target="_blank"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </nav>
       <div class="header__searching-and-links list">
-        <div class="searching list">
-          <button class="searching__button square-image btn">
-            <img src="./images/searching.svg" alt="Search" />
-          </button>
-          <input class="searching__input" type="search" placeholder="Search" />
-        </div>
+        <input
+          class="searching__input field"
+          type="search"
+          placeholder="Search"
+        />
         |
         <a
           href="https://null-smth.com/"
@@ -148,175 +162,362 @@
             </button>
           </div>
         </header>
-        <div class="catalog__catalog-cards list">
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
-              </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
-              </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label label__sold-out"
-                >Sold Out</span
+        <ul class="catalog__catalog-cards list">
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
               >
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
               </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
               </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label label__sold-out"
+                  >Sold Out</span
+                >
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
               </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
               </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
               </div>
-            </article>
-          </a>
-          <a
-            href="https://null-smth.com/"
-            class="catalog-cards__link"
-            target="_blank"
-          >
-            <article class="catalog-cards__catolog-card container__card">
-              <img
-                src="./images/Skeleton.png"
-                alt="product image"
-                class="catolog-card__image"
-              />
-              <span class="catolog-card__label label">New</span>
-              <div>
-                <p class="catolog-card__price text__highlite">$199</p>
-                <h3 class="catolog-card__name text text__small heading__h3">
-                  Name product
-                </h3>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
               </div>
-            </article>
-          </a>
-        </div>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-cards__list-item">
+            <a
+              href="https://null-smth.com/"
+              class="catalog-cards__link"
+              target="_blank"
+            >
+              <article
+                class="catalog-cards__catolog-card container__card behavior__card"
+              >
+                <img
+                  src="./images/Skeleton.png"
+                  alt="product image"
+                  class="catolog-card__image"
+                />
+                <span class="catolog-card__label label">New</span>
+                <div>
+                  <p class="catolog-card__price text__highlite">$199</p>
+                  <h3 class="catolog-card__name text text__small heading__h3">
+                    Name product
+                  </h3>
+                </div>
+              </article>
+            </a>
+            <div class="catalog-cards__catalog-options">
+              <div class="catalog-options__list list list__column">
+                <button class="catalog-options__favorites btn">
+                  <object
+                    class="square-image"
+                    data="./images/like.svg"
+                    type="image/svg+xml"
+                  ></object>
+                  Favorites
+                </button>
+                <a
+                  href="https://null-smth.com/"
+                  class="catalog-options__buy btn btn__wallet"
+                  target="_blank"
+                >
+                  Buy
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="our-blog container__section">
         <h2 class="our-blog__title heading">Our blog</h2>
         <div class="our-blog__blog-viewer">
-          <article class="blog-viewer__blog-card big container__card">
+          <article
+            class="blog-viewer__blog-card big container__card behavior__card behavior__link"
+            tabindex="0"
+          >
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -335,9 +536,12 @@
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author text text__small"
-                  >20 Jun 2022</span
+                <time
+                  datatime="2022-06-20"
+                  class="post-data__author text text__small"
                 >
+                  20 Jun 2022
+                </time>
               </div>
               <h3 class="blog-card__title heading__h3">Sonic live</h3>
               <p class="blog-card__text text text__small">
@@ -354,7 +558,10 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card container__card">
+          <article
+            class="blog-viewer__blog-card container__card behavior__card behavior__link"
+            tabindex="0"
+          >
             <img
               class="blog-card__image small"
               src="./images/face.png"
@@ -377,8 +584,10 @@
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author text text__small"
-                  >20 Jun 2022</span
+                <time
+                  datatime="2022-06-20"
+                  class="post-data__author text text__small"
+                  >20 Jun 2022</time
                 >
               </div>
               <h3 class="blog-card__title heading__h3">Sonic live</h3>
@@ -396,7 +605,10 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card container__card">
+          <article
+            class="blog-viewer__blog-card container__card behavior__card behavior__link"
+            tabindex="0"
+          >
             <img
               class="blog-card__image small"
               src="./images/face.png"
@@ -419,8 +631,10 @@
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author text text__small"
-                  >20 Jun 2022</span
+                <time
+                  datatime="2022-06-20"
+                  class="post-data__author text text__small"
+                  >20 Jun 2022</time
                 >
               </div>
               <h3 class="blog-card__title heading__h3">Sonic live</h3>
@@ -438,7 +652,10 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card container__card">
+          <article
+            class="blog-viewer__blog-card container__card behavior__card behavior__link"
+            tabindex="0"
+          >
             <img
               class="blog-card__image small"
               src="./images/face.png"
@@ -461,8 +678,10 @@
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author text text__small"
-                  >20 Jun 2022</span
+                <time
+                  datatime="2022-06-20"
+                  class="post-data__author text text__small"
+                  >20 Jun 2022</time
                 >
               </div>
               <h3 class="blog-card__title heading__h3">Sonic live</h3>
@@ -480,7 +699,10 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card big container__card">
+          <article
+            class="blog-viewer__blog-card big container__card behavior__card behavior__link"
+            tabindex="0"
+          >
             <img class="blog-card__image" src="./images/face.png" alt="field" />
             <span class="blog-card__label label">NFT</span>
             <div>
@@ -499,8 +721,10 @@
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author text text__small"
-                  >20 Jun 2022</span
+                <time
+                  datatime="2022-06-20"
+                  class="post-data__author text text__small"
+                  >20 Jun 2022</time
                 >
               </div>
               <h3 class="blog-card__title heading__h3">Sonic live</h3>
@@ -518,7 +742,10 @@
               </a>
             </div>
           </article>
-          <article class="blog-viewer__blog-card container__card">
+          <article
+            class="blog-viewer__blog-card container__card behavior__card behavior__link"
+            tabindex="0"
+          >
             <img
               class="blog-card__image small"
               src="./images/face.png"
@@ -541,8 +768,10 @@
                   alt="calendar"
                   class="post-data__calendar"
                 />
-                <span class="post-data__author text text__small"
-                  >20 Jun 2022</span
+                <time
+                  datatime="2022-06-20"
+                  class="post-data__author text text__small"
+                  >20 Jun 2022</time
                 >
               </div>
               <h3 class="blog-card__title heading__h3">Sonic live</h3>
@@ -580,28 +809,28 @@
           </p>
         </div>
         <ol class="about-us__about-viewer">
-          <li class="about-viewer__about-card container__card">
+          <li class="about-viewer__about-card container__card behavior__card">
             <h3 class="about-card__title heading__h3">High quality</h3>
             <p class="about-card__text text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li class="about-viewer__about-card container__card">
+          <li class="about-viewer__about-card container__card behavior__card">
             <h3 class="about-card__title heading__h3">Big collection</h3>
             <p class="about-card__text text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li class="about-viewer__about-card container__card">
+          <li class="about-viewer__about-card container__card behavior__card">
             <h3 class="about-card__title heading__h3">Top Resourse</h3>
             <p class="about-card__text text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
               typesetting industry.
             </p>
           </li>
-          <li class="about-viewer__about-card container__card">
+          <li class="about-viewer__about-card container__card behavior__card">
             <h3 class="about-card__title heading__h3">Big community</h3>
             <p class="about-card__text text text__small">
               Lorem Ipsum is simply dummy text of the printing and Ipsum
@@ -619,7 +848,10 @@
       <section class="our-team container__section">
         <h2 class="our-team__title heading">Our team</h2>
         <div class="our-team__team-viewer list">
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -673,7 +905,10 @@
               </li>
             </ul>
           </article>
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -727,7 +962,10 @@
               </li>
             </ul>
           </article>
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -781,7 +1019,10 @@
               </li>
             </ul>
           </article>
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -835,7 +1076,10 @@
               </li>
             </ul>
           </article>
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -889,7 +1133,10 @@
               </li>
             </ul>
           </article>
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -943,7 +1190,10 @@
               </li>
             </ul>
           </article>
-          <article class="our-team__card container__card list">
+          <article
+            class="our-team__card container__card behavior__card behavior__link list"
+            tabindex="0"
+          >
             <img
               class="our-team__image"
               src="./images/avatar.png"
@@ -1034,7 +1284,7 @@
     <footer class="footer container__section">
       <div class="footer__footer-description list">
         <div class="footer-description">
-          <a class="footer-description__link list" href="/">
+          <a class="footer-description__link list behavior__link" href="/">
             <img
               src="./images/small-logo.svg"
               alt="Logo"
