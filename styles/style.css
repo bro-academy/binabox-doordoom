@@ -365,7 +365,7 @@ a {
   font-size: 0.875rem;
   background-color: #0d0d15;
   border: 0.1rem solid #d0d7fb2b;
-  background: url("../images/searching.svg") no-repeat left;
+  background: url("../images/icons/searching.svg") no-repeat left;
   background-size: 1.5rem;
   background-position-x: 0.75rem;
 }
@@ -375,13 +375,39 @@ a {
 }
 
 .main {
+  position: relative;
   padding: 8.813rem 12.5rem;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: calc((100% - 100vw) / 2);
   background: radial-gradient(
     42.5% 42.5% at 22.28% -4.22%,
     #0265dc80 0%,
     #0265dc00 100%
   );
 }
+
+.main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/intro-backgrounds/cube.webp),
+    url(../images/intro-backgrounds/waves.webp),
+    radial-gradient(circle, #014759 5%, transparent 16%);
+  background-repeat: no-repeat;
+  background-position: 66.375rem 2rem, 84.063rem 22.5rem, 30.15rem -22rem;
+  z-index: -1;
+}
+
 .main__container {
   width: 52%;
   gap: 2rem;
@@ -510,8 +536,8 @@ a {
 }
 
 .catolog-card__image {
-  width: 15rem;
   margin-right: 0.75rem;
+  background: radial-gradient(circle, #317f98 90%, transparent 100%);
 }
 
 .catolog-card__name {
@@ -533,8 +559,12 @@ a {
   grid-row: span 2;
 }
 
+.blog-card__image {
+  background: radial-gradient(circle, #317f98 60%, transparent 100%);
+}
+
 .blog-card__image.small {
-  height: 10.875rem;
+  object-fit: cover;
 }
 
 .blog-card__post-data {
@@ -627,8 +657,8 @@ a {
 }
 
 .our-team__image {
-  width: 7.5rem;
   border-radius: 50%;
+  background-color: #014759;
 }
 
 .our-team__description {
@@ -683,6 +713,26 @@ a {
 
 .faqs__details[open] .faqs__summary::after {
   content: "-";
+}
+
+.intro {
+  position: relative;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/intro-backgrounds/line.webp),
+    url(../images/intro-backgrounds/topographic.webp);
+  background-repeat: no-repeat;
+  opacity: 20%;
+  background-size: 100% 40%, 100% 95%;
+  background-position: 0 100%, 0 0;
+  z-index: -1;
 }
 
 .intro__container {
@@ -794,12 +844,16 @@ a {
   gap: 0.5rem;
 }
 
+.blog-post__list-item {
+  width: 100%;
+}
+
 .blog-post__list-item::before {
   content: "";
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../images/small-logo.svg");
+  background-image: url("../images/icons/small-logo.svg");
   background-repeat: no-repeat;
   margin-right: 0.5rem;
 }
