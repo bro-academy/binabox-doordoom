@@ -706,6 +706,7 @@ a {
 }
 
 .faqs__details {
+  display: block;
   max-width: 57rem;
   width: 100%;
 }
@@ -741,6 +742,17 @@ a {
   position: relative;
 }
 
+.intro::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 94%;
+  top: 0;
+  left: calc((100% - 100vw) / 2);
+  background-color: #1a1925;
+  z-index: -1;
+}
+
 .intro::after {
   content: "";
   position: absolute;
@@ -748,9 +760,8 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../images/intro-backgrounds/topographic-line.webp);
+  background-image: url(../images/intro-backgrounds/topographicPH.webp);
   background-repeat: no-repeat;
-  opacity: 20%;
   background-size: 100% 95%;
   background-position: 0 0;
   z-index: -1;
