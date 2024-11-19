@@ -15,18 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/svg" href="./images/icons/small-logo.svg" />
     <title>Binabox</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header list">
       <a href="/" class="header__logo behavior__link">
-        <img
-          src="./images/small-logo.svg"
-          alt="Logo"
-          class="header__logo-image"
-        />
-        <h1 class="header__title heading">Binabox</h1>
+        <h1 class="header__title logo heading">Binabox</h1>
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list list">
@@ -49,14 +45,6 @@
               >Catalog</a
             >
           </li>
-          <li class="navigation__item">
-            <a
-              class="navigation__link btn btn__navigation"
-              href="./contacts.html"
-              target="_blank"
-              >Contact Us</a
-            >
-          </li>
         </ul>
       </nav>
       <div class="header__searching-and-links list">
@@ -70,16 +58,22 @@
           href="https://null-smth.com/"
           class="header-links__to-discord btn"
           target="_blank"
-          ><img src="./images/discord.svg" alt="Discord" class="square-image" />
-          Discord</a
         >
+        <svg  class="square-image">
+          <use xlink:href="./images/icons/sprite.svg#discord">
+        </svg>
+          Discord
+        </a>
         <a
           href="https://null-smth.com/"
           class="header-links__to-connect btn btn__wallet"
           target="_blank"
-          ><img src="./images/wallet.svg" alt="Wallet" class="square-image" />
-          Connect</a
         >
+        <svg  class="square-image">
+          <use xlink:href="./images/icons/sprite.svg#wallet">
+        </svg>
+          Connect
+        </a>
       </div>
     </header>
     <main>
@@ -131,11 +125,6 @@
       <section class="catalog container__section">
         <header class="catalog__controller list">
           <div class="controller__controller-header list">
-            <img
-              class="controller-header__image"
-              src="./images/file.svg"
-              alt="field"
-            />
             <h2 class="controller-header__title heading">Catalog</h2>
           </div>
           <div class="horizontal-divider"></div>
@@ -145,20 +134,16 @@
             <button
               class="controller-buttons__button btn btn__socials-and-arrows"
             >
-              <img
-                src="./images/left-arrow.svg"
-                alt="left arrow"
-                class="square-image square-image__arrow"
-              />
+            <svg  class="square-image  square-image__arrow">
+              <use xlink:href="./images/icons/sprite.svg#left-arrow">
+            </svg>
             </button>
             <button
               class="controller-buttons__button btn btn__socials-and-arrows"
             >
-              <img
-                src="./images/right-arrow.svg"
-                alt="right arrow"
-                class="square-image square-image__arrow"
-              />
+            <svg  class="square-image  square-image__arrow">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
             </button>
           </div>
         </header>
@@ -168,14 +153,16 @@
               href="https://null-smth.com/"
               class="catalog-cards__link"
               target="_blank"
-            >
+            >  </svg>
               <article
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/skeleton.webp"
+                  alt="beautiful skelet product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -189,11 +176,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -216,9 +201,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/cat.webp"
+                  alt="amazing cat product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -232,11 +219,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -259,9 +244,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/scissors.webp"
+                  alt="sharp scissors product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label label__sold-out"
                   >Sold Out</span
@@ -277,11 +264,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -304,9 +289,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/book.webp"
+                  alt="mysterious book product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -320,11 +307,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -347,9 +332,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/frame.webp"
+                  alt="incredible frame product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -363,11 +350,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -390,9 +375,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/skeleton.webp"
+                  alt="hiding skeleton product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -406,11 +393,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+            <svg  class="square-image">
+              <use xlink:href="./images/icons/sprite.svg#like">
+            </svg>
                   Favorites
                 </button>
                 <a
@@ -433,9 +418,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/skeleton.webp"
+                  alt="ninja skeleton product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -449,11 +436,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -476,9 +461,11 @@
                 class="catalog-cards__catolog-card container__card behavior__card"
               >
                 <img
-                  src="./images/Skeleton.png"
-                  alt="product image"
+                  src="./images/products/skeleton.webp"
+                  alt="invisible skeleton product"
                   class="catolog-card__image"
+                  width="240"
+                  height="324"
                 />
                 <span class="catolog-card__label label">New</span>
                 <div>
@@ -492,11 +479,9 @@
             <div class="catalog-cards__catalog-options">
               <div class="catalog-options__list list list__column">
                 <button class="catalog-options__favorites btn">
-                  <object
-                    class="square-image"
-                    data="./images/like.svg"
-                    type="image/svg+xml"
-                  ></object>
+                  <svg  class="square-image">
+                    <use xlink:href="./images/icons/sprite.svg#like">
+                  </svg>
                   Favorites
                 </button>
                 <a
@@ -518,27 +503,23 @@
             class="blog-viewer__blog-card big container__card behavior__card behavior__link"
             tabindex="0"
           >
-            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <img
+              class="blog-card__image"
+              width="736"
+              height="640"
+              src="./images/blog-articles/face.webp"
+              alt="sonic live face article"
+            />
             <span class="blog-card__label label">NFT</span>
             <div>
               <div class="blog-card__post-data">
-                <img
-                  src="./images/user.svg"
-                  alt="user"
-                  class="post-data__image"
-                />
-                <span class="post-data__author text text__small"
+                <span class="post-data__author common-position text text__small"
                   >Tony Nguyen</span
                 >
                 |
-                <img
-                  src="./images/calendar.svg"
-                  alt="calendar"
-                  class="post-data__calendar"
-                />
                 <time
                   datatime="2022-06-20"
-                  class="post-data__author text text__small"
+                  class="post-data__calendar common-position text text__small"
                 >
                   20 Jun 2022
                 </time>
@@ -554,7 +535,9 @@
                 target="_blank"
               >
                 Read more
-                <img src="./images/right-arrow.svg" alt="right arrow" />
+            <svg  class="blog-card__icon">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
               </a>
             </div>
           </article>
@@ -564,29 +547,22 @@
           >
             <img
               class="blog-card__image small"
-              src="./images/face.png"
-              alt="field"
+              width="736"
+              height="174"
+              src="./images/products/skeleton.webp"
+              alt="sonic live skeleton article"
             />
             <span class="blog-card__label label">NFT</span>
             <div>
               <div class="blog-card__post-data">
-                <img
-                  src="./images/user.svg"
-                  alt="user"
-                  class="post-data__image"
-                />
                 <span class="post-data__author text text__small"
                   >Tony Nguyen</span
                 >
                 |
-                <img
-                  src="./images/calendar.svg"
-                  alt="calendar"
-                  class="post-data__calendar"
-                />
+
                 <time
                   datatime="2022-06-20"
-                  class="post-data__author text text__small"
+                  class="post-data__calendar text text__small"
                   >20 Jun 2022</time
                 >
               </div>
@@ -601,7 +577,9 @@
                 target="_blank"
               >
                 Read more
-                <img src="./images/right-arrow.svg" alt="right arrow" />
+            <svg  class="blog-card__icon">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
               </a>
             </div>
           </article>
@@ -611,29 +589,22 @@
           >
             <img
               class="blog-card__image small"
-              src="./images/face.png"
-              alt="field"
+              width="736"
+              height="174"
+              src="./images/products/cat.webp"
+              alt="sonic live cat article"
             />
             <span class="blog-card__label label">NFT</span>
             <div>
               <div class="blog-card__post-data">
-                <img
-                  src="./images/user.svg"
-                  alt="user"
-                  class="post-data__image"
-                />
                 <span class="post-data__author text text__small"
                   >Tony Nguyen</span
                 >
                 |
-                <img
-                  src="./images/calendar.svg"
-                  alt="calendar"
-                  class="post-data__calendar"
-                />
+
                 <time
                   datatime="2022-06-20"
-                  class="post-data__author text text__small"
+                  class="post-data__calendar text text__small"
                   >20 Jun 2022</time
                 >
               </div>
@@ -648,7 +619,9 @@
                 target="_blank"
               >
                 Read more
-                <img src="./images/right-arrow.svg" alt="right arrow" />
+            <svg  class="blog-card__icon">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
               </a>
             </div>
           </article>
@@ -658,29 +631,23 @@
           >
             <img
               class="blog-card__image small"
-              src="./images/face.png"
-              alt="field"
+              width="736"
+              height="174"
+              src="./images/blog-articles/gorilla.webp"
+              alt="sonic live gorilla article"
             />
             <span class="blog-card__label label">NFT</span>
             <div>
               <div class="blog-card__post-data">
-                <img
-                  src="./images/user.svg"
-                  alt="user"
-                  class="post-data__image"
-                />
+
                 <span class="post-data__author text text__small"
                   >Tony Nguyen</span
                 >
                 |
-                <img
-                  src="./images/calendar.svg"
-                  alt="calendar"
-                  class="post-data__calendar"
-                />
+
                 <time
                   datatime="2022-06-20"
-                  class="post-data__author text text__small"
+                  class="post-data__calendar text text__small"
                   >20 Jun 2022</time
                 >
               </div>
@@ -695,7 +662,9 @@
                 target="_blank"
               >
                 Read more
-                <img src="./images/right-arrow.svg" alt="right arrow" />
+            <svg  class="blog-card__icon">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
               </a>
             </div>
           </article>
@@ -703,27 +672,25 @@
             class="blog-viewer__blog-card big container__card behavior__card behavior__link"
             tabindex="0"
           >
-            <img class="blog-card__image" src="./images/face.png" alt="field" />
+            <img
+              class="blog-card__image"
+              width="736"
+              height="640"
+              src="./images/blog-articles/frame.webp"
+              alt="sonic live frame article"
+            />
             <span class="blog-card__label label">NFT</span>
             <div>
               <div class="blog-card__post-data">
-                <img
-                  src="./images/user.svg"
-                  alt="user"
-                  class="post-data__image"
-                />
+
                 <span class="post-data__author text text__small"
                   >Tony Nguyen</span
                 >
                 |
-                <img
-                  src="./images/calendar.svg"
-                  alt="calendar"
-                  class="post-data__calendar"
-                />
+
                 <time
                   datatime="2022-06-20"
-                  class="post-data__author text text__small"
+                  class="post-data__calendar text text__small"
                   >20 Jun 2022</time
                 >
               </div>
@@ -738,7 +705,9 @@
                 target="_blank"
               >
                 Read more
-                <img src="./images/right-arrow.svg" alt="right arrow" />
+            <svg  class="blog-card__icon">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
               </a>
             </div>
           </article>
@@ -748,29 +717,23 @@
           >
             <img
               class="blog-card__image small"
-              src="./images/face.png"
-              alt="field"
+              width="736"
+              height="174"
+              src="./images/blog-articles/duck.webp"
+              alt="sonic live duck article"
             />
             <span class="blog-card__label label">NFT</span>
             <div>
               <div class="blog-card__post-data">
-                <img
-                  src="./images/user.svg"
-                  alt="user"
-                  class="post-data__image"
-                />
+
                 <span class="post-data__author text text__small"
                   >Tony Nguyen</span
                 >
                 |
-                <img
-                  src="./images/calendar.svg"
-                  alt="calendar"
-                  class="post-data__calendar"
-                />
+
                 <time
                   datatime="2022-06-20"
-                  class="post-data__author text text__small"
+                  class="post-data__calendar text text__small"
                   >20 Jun 2022</time
                 >
               </div>
@@ -785,7 +748,9 @@
                 target="_blank"
               >
                 Read more
-                <img src="./images/right-arrow.svg" alt="right arrow" />
+            <svg  class="blog-card__icon">
+              <use xlink:href="./images/icons/sprite.svg#right-arrow">
+            </svg>
               </a>
             </div>
           </article>
@@ -854,8 +819,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -867,32 +834,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+            <svg  >
+              <use xlink:href="./images/icons/sprite.svg#twitter">
+            </svg>
+</a>
               </li>
               <li>
                 <a
@@ -900,8 +846,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -911,8 +892,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -924,32 +907,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#twitter">
+                  </svg>
+                </a>
               </li>
               <li>
                 <a
@@ -957,8 +919,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -968,8 +965,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -981,32 +980,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+            <svg  >
+              <use xlink:href="./images/icons/sprite.svg#twitter">
+            </svg>
+</a>
               </li>
               <li>
                 <a
@@ -1014,8 +992,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -1025,8 +1038,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -1038,32 +1053,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+            <svg  >
+              <use xlink:href="./images/icons/sprite.svg#twitter">
+            </svg>
+</a>
               </li>
               <li>
                 <a
@@ -1071,8 +1065,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -1082,8 +1111,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -1095,32 +1126,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+            <svg  >
+              <use xlink:href="./images/icons/sprite.svg#twitter">
+            </svg>
+</a>
               </li>
               <li>
                 <a
@@ -1128,8 +1138,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -1139,8 +1184,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -1152,32 +1199,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+            <svg  >
+              <use xlink:href="./images/icons/sprite.svg#twitter">
+            </svg>
+</a>
               </li>
               <li>
                 <a
@@ -1185,8 +1211,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -1196,8 +1257,10 @@
           >
             <img
               class="our-team__image"
-              src="./images/avatar.png"
-              alt="avatar"
+              width="120"
+              height="120"
+              src="./images/team/avatar.webp"
+              alt="Jason Smith avatar"
             />
             <div class="our-team__description">
               <h3 class="our-team__name heading__h3">Jason Smith</h3>
@@ -1209,32 +1272,11 @@
                   href="https://null-smth.com/"
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
-                  ><img src="./images/twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/facebook.svg" alt="Facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/telegram.svg" alt="Telegram"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://null-smth.com/"
-                  class="socials__to-connect btn btn__socials-and-arrows"
-                  target="_blank"
-                  ><img src="./images/linkedin.svg" alt="LinkedIn"
-                /></a>
+                >
+            <svg  >
+              <use xlink:href="./images/icons/sprite.svg#twitter">
+            </svg>
+</a>
               </li>
               <li>
                 <a
@@ -1242,8 +1284,43 @@
                   class="socials__to-connect btn btn__socials-and-arrows"
                   target="_blank"
                 >
-                  <img src="./images/instagram.svg" alt="Instagram"
-                /></a>
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#telegram">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://null-smth.com/"
+                  class="socials__to-connect btn btn__socials-and-arrows"
+                  target="_blank"
+                >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#instagram">
+                  </svg>
+                </a>
               </li>
             </ul>
           </article>
@@ -1285,12 +1362,7 @@
       <div class="footer__footer-description list">
         <div class="footer-description">
           <a class="footer-description__link list behavior__link" href="/">
-            <img
-              src="./images/small-logo.svg"
-              alt="Logo"
-              class="footer-description__logo-image"
-            />
-            <p class="footer-description__title paragraph">Binabox</p>
+            <p class="footer-description__title logo paragraph">Binabox</p>
           </a>
           <p class="footer-description__text text text__footer">
             We are the best way to check the rarity of NFT collection.
@@ -1376,32 +1448,11 @@
               href="#"
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
-              ><img src="./images/twitter.svg" alt="Twitter"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-              ><img src="./images/facebook.svg" alt="Facebook"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-              ><img src="./images/telegram.svg" alt="Telegram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-              ><img src="./images/youtube.svg" alt="YouTube"
-            /></a>
+            >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#twitter">
+                  </svg>
+                </a>
           </li>
           <li>
             <a
@@ -1409,8 +1460,10 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <img src="./images/tiktok.svg" alt="Tik Tok"
-            /></a>
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#facebook">
+              </svg>
+            </a>
           </li>
           <li>
             <a
@@ -1418,7 +1471,42 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <img src="./images/discord.svg" alt="Discord" />
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#telegram">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#youtube">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#tiktok">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#discord">
+              </svg>
             </a>
           </li>
         </ul>

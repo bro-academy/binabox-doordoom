@@ -19,17 +19,13 @@
   />
   <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/svg" href="./images/icons/small-logo.svg" />
     <title>Binabox: The Basilisks NFT</title>
   </head>
   <body>
     <header class="header list">
-      <a href="/" class="header__logo list behavior__link" target="_blank">
-        <img
-          src="./images/small-logo.svg"
-          alt="Logo"
-          class="header__logo-image"
-        />
-        <p class="header__title paragraph">Binabox</p>
+      <a href="/" class="header__logo behavior__link">
+        <h1 class="header__title logo heading">Binabox</h1>
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list list">
@@ -52,14 +48,6 @@
               >Catalog</a
             >
           </li>
-          <li class="navigation__item">
-            <a
-              class="navigation__link btn btn__navigation"
-              href="./contacts.html"
-              target="_blank"
-              >Contact Us</a
-            >
-          </li>
         </ul>
       </nav>
       <div class="header__searching-and-links list">
@@ -73,16 +61,22 @@
           href="https://null-smth.com/"
           class="header-links__to-discord btn"
           target="_blank"
-          ><img src="./images/discord.svg" alt="Discord" class="square-image" />
-          Discord</a
         >
+        <svg  class="square-image">
+          <use xlink:href="./images/icons/sprite.svg#discord">
+        </svg>
+          Discord
+        </a>
         <a
           href="https://null-smth.com/"
           class="header-links__to-connect btn btn__wallet"
           target="_blank"
-          ><img src="./images/wallet.svg" alt="Wallet" class="square-image" />
-          Connect</a
         >
+        <svg  class="square-image">
+          <use xlink:href="./images/icons/sprite.svg#wallet">
+        </svg>
+          Connect
+        </a>
       </div>
     </header>
     <main>
@@ -240,7 +234,7 @@
         </aside>
         <section class="blog-post list__column list">
           <figure class="blog-post__main-image figure">
-            <img src="./images/intro-img.png" alt="post main image" />
+            <img src="./images/intro-img.webp"/>
             <figcaption class="figcaption">Photo caption</figcaption>
           </figure>
           <div>
@@ -253,12 +247,10 @@
               Gaming
             </a>
           </div>
-          <div class="blog-post__post-data">
-            <img src="./images/user.svg" alt="user" class="post-data__image" />
+          <div class="blog-post__post-data list">
             <span class="post-data__author text__small">Tony Nguyen</span>
             |
-            <img src="./images/calendar.svg" alt="calendar" class="post-data__calendar" />
-            <span class="post-data__author text__small">20 Jun 2022</span>
+            <span class="post-data__calendar text__small">20 Jun 2022</span>
           </div>
           <p class="blog-post__paragraph paragraph">
             The Basilisks that <span class="paragraph__highlite">players</span> collect are represented with
@@ -309,17 +301,20 @@
               </p>
             </blockquote>
             <figcaption class="blog-cite__caption list figcaption">
-              <img src="./images/stars.svg" alt="stars" /> <span class="blog-cite__estimation">8.5/10</span> Markout
+              <svg class="caption__image">
+                <use xlink:href="./images/icons/sprite.svg#stars">
+              </svg> 
+              <span class="blog-cite__estimation">8.5/10</span> Markout
               Corporation
             </figcaption>
           </figure>
           <div class="blog-post__images list">
             <figure class="blog-post__image figure">
-              <img src="./images/first-img.png" alt="post image" />
+              <img src="./images/first-img.webp"/>
               <figcaption class="figcaption">Photo caption</figcaption>
             </figure>
             <figure class="blog-post__image figure">
-              <img src="./images/second-img.png" alt="post image" />
+              <img src="./images/second-img.webp"/>
               <figcaption class="figcaption">Photo caption</figcaption>
             </figure>
           </div>
@@ -368,17 +363,23 @@
               <ul class="blog-links__list list">
                 <li class="chip-list__chip-item">
                   <a class="chip-list__chip-imaged-link btn" href="https://null-smth.com/" target="_blank">
-                    <img class="chip-list__chip-image" src="./images/twitter.svg" alt="Twitter" />
+                    <svg >
+                      <use xlink:href="./images/icons/sprite.svg#twitter">
+                    </svg>
                   </a>
                 </li>
                 <li class="chip-list__chip-item">
                   <a class="chip-list__chip-imaged-link btn" href="https://null-smth.com/" target="_blank">
-                    <img class="chip-list__chip-image" src="./images/facebook.svg" alt="Facebook" />
+                    <svg >
+                      <use xlink:href="./images/icons/sprite.svg#facebook">
+                    </svg>
                   </a>
                 </li>
                 <li class="chip-list__chip-item">
                   <a class="chip-list__chip-imaged-link btn" href="https://null-smth.com/" target="_blank">
-                    <img class="chip-list__chip-image" src="./images/instagram.svg" alt="Instagram" />
+                    <svg >
+                      <use xlink:href="./images/icons/sprite.svg#instagram">
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -389,16 +390,11 @@
     </main>
     <footer class="footer container__section">
       <div class="footer__footer-description list">
-        <div class="footer-description ">
-          <a class="footer-description__link list behavior__link" href="/" target="_blank">
-            <img
-              src="./images/small-logo.svg"
-              alt="Logo"
-              class="footer-description__logo-image"
-            />
-            <p class="footer-description__title paragraph">Binabox</p>
+        <div class="footer-description">
+          <a class="footer-description__link list behavior__link" href="/">
+            <p class="footer-description__title logo paragraph">Binabox</p>
           </a>
-          <p class="footer-description__text text__footer text">
+          <p class="footer-description__text text text__footer">
             We are the best way to check the rarity of NFT collection.
           </p>
         </div>
@@ -406,11 +402,12 @@
           <h3 class="footer-column__title heading__h3">Subscribe</h3>
           <ul class="footer-column__column list__column list">
             <li class="footer-column__item">
-              <a href="/" class="btn__navigation footer-column__link" target="_blank">Home</a>
+              <a href="/" class="btn__navigation footer-column__link">Home</a>
             </li>
             <li class="footer-column__item">
               <a
                 href="./blog.html"
+                target="_blank"
                 class="footer-column__link btn__navigation"
                 >Blog</a
               >
@@ -472,7 +469,7 @@
         </div>
       </div>
       <div class="footer__socials list">
-        <p class="footer-link__copyright text__footer text">
+        <p class="footer-link__copyright text text__footer">
           BINABOX 2022 - ALL rights reserved
         </p>
         <ul class="socials__list list">
@@ -481,32 +478,11 @@
               href="#"
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
-              ><img src="./images/twitter.svg" alt="Twitter"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-              ><img src="./images/facebook.svg" alt="Facebook"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-              ><img src="./images/telegram.svg" alt="Telegram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-              ><img src="./images/youtube.svg" alt="YouTube"
-            /></a>
+            >
+                  <svg >
+                    <use xlink:href="./images/icons/sprite.svg#twitter">
+                  </svg>
+                </a>
           </li>
           <li>
             <a
@@ -514,8 +490,10 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <img src="./images/tiktok.svg" alt="Tik Tok"
-            /></a>
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#facebook">
+              </svg>
+            </a>
           </li>
           <li>
             <a
@@ -523,7 +501,42 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <img src="./images/discord.svg" alt="Discord" />
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#telegram">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#youtube">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#tiktok">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg >
+                <use xlink:href="./images/icons/sprite.svg#discord">
+              </svg>
             </a>
           </li>
         </ul>
