@@ -366,6 +366,10 @@ a {
   background-color: #59a7f6;
 }
 
+.checkbox:invalid + .checkbox-label::before {
+  border-color: #ea3829;
+}
+
 .radio-label::before {
   content: "";
   display: inline-block;
@@ -397,6 +401,76 @@ a {
 
 .radio:focus + .radio-label::before {
   border: 0.1rem solid #3892f3;
+}
+
+.radio:invalid + .radio-label::before {
+  border-color: #ea3829;
+}
+
+.toggle__box {
+  display: block;
+  width: 40px;
+  height: 20px;
+  border-radius: 19px;
+  background-color: rgba(229, 236, 251, 0.36);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.toggle__box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  border-radius: 100px;
+}
+
+.toggle__box::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition-property: transform, background-color;
+  transition-duration: 0.2s;
+}
+
+.toggle__checkbox:checked + .toggle__box {
+  background-color: #0265dc;
+}
+.toggle__checkbox:checked + .toggle__box::after {
+  transform: translateX(calc(100% + 4px));
+}
+.toggle__checkbox:checked + .toggle__box::before {
+  opacity: 1;
+}
+
+.toggle__checkbox:disabled + .toggle__box {
+  background-color: rgba(208, 215, 251, 0.17);
+  cursor: default;
+  opacity: 0.5;
+}
+
+.toggle__box:hover {
+  background-color: rgba(212, 217, 242, 0.26);
+}
+
+.toggle__checkbox:focus + .toggle__box::before {
+  border: 0.1rem solid #3892f3;
+}
+
+.toggle__checkbox:checked + .toggle__box:hover {
+  background-color: #3892f3;
 }
 
 .text {
@@ -576,7 +650,6 @@ a {
   outline: none;
   color: #f5f8fb;
   background-color: #0d0d15;
-  /* border: 0.1rem solid #d0d7fb2b; */
   background: url("../images/icons/searching.svg") no-repeat left;
   background-size: 1.5rem;
   background-position-x: 0.75rem;
@@ -1304,6 +1377,7 @@ a {
 .form__field {
   gap: 0.375rem;
   width: calc(100% - 2 * 0.75rem);
+  position: relative;
 }
 
 .form__birth-day {
@@ -1316,6 +1390,31 @@ a {
   outline: none;
   background-color: #0d0d15;
   color: #f5f8fb;
+  position: relative;
+}
+
+.field__input:invalid:not(:focus) {
+  border: 0.1rem solid #ea3829;
+}
+
+.form__field:has(.field__input:invalid:not(:focus))::after {
+  content: "This field is required.";
+  position: absolute;
+  backface-visibility: hidden;
+  top: 100%;
+  left: 0;
+  color: #ea3829;
+  font-size: 0.75rem;
+}
+
+.form__field:has(.field__input[required]:valid:focus)::after {
+  content: "Field validation is successful.";
+  position: absolute;
+  backface-visibility: hidden;
+  top: 100%;
+  left: 0;
+  color: #008f5d;
+  font-size: 0.75rem;
 }
 
 .personal-info__checkbox {

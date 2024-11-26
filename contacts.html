@@ -178,13 +178,13 @@
           <ul class="questionnaire__list list list__column">
             <li class="form__warning list">
               <p class="paragraph__field">Use my profile information</p>
-              <label for="personal-info">
-                <input
-                  type="checkbox"
-                  name="personal-info"
-                  id="personal-info"
-                />
-              </label>
+              <input
+                type="checkbox"
+                name="personal-info"
+                id="personal-info"
+                class="hidden toggle__checkbox"
+              />
+              <label for="personal-info" class="toggle__box"> </label>
             </li>
             <li class="form__field list list__column">
               <label for="personal-info__name">Name</label>
@@ -193,6 +193,8 @@
                 name="personal-info"
                 id="personal-info__name"
                 class="field__input field"
+                required
+                minlength="2"
               />
             </li>
             <li class="form__field list list__column">
@@ -202,6 +204,8 @@
                 name="personal-info"
                 id="personal-info__last-name"
                 class="field__input field"
+                required
+                minlength="2"
               />
             </li>
             <li class="form__field list list__column">
@@ -214,6 +218,7 @@
                 data-date-format="dd/mm/yyyy"
                 data-language="en"
                 placeholder="dd/mm/yyyy"
+                required
               />
             </li>
             <li class="form__field list list__column form__birth-day">
@@ -224,6 +229,7 @@
                 name="sex"
                 value="male"
                 id="sex__male"
+                required
               />
               <label class="radio-label" for="sex__male"> Male </label>
               <input
@@ -242,6 +248,8 @@
                 name="personal-info"
                 id="personal-info__email"
                 class="field__input field"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
             </li>
             <li class="form__field list list__column">
@@ -251,6 +259,8 @@
                 name="personal-info"
                 id="personal-info__phone"
                 class="field__input field"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               />
             </li>
             <li class="form__field list list__column">
@@ -268,6 +278,7 @@
                 name="personal-info"
                 value="security"
                 id="personal-info__security"
+                required
               />
               <label class="checkbox-label" for="personal-info__security">
                 &nbsp;By clicking on the ‘Send Message’ button I agree to
