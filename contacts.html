@@ -7,17 +7,21 @@
       name="description"
       content="The sixth lesson for BRO academy. The page represents information about contacts of Binabox"
     />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" type="image/svg" href="./images/icons/small-logo.svg" />
     <title>Binabox: Contacts</title>
@@ -30,7 +34,12 @@
       <nav class="header__navigation">
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a class="navigation__link btn btn__navigation" href="/" target="_blank">Home</a>
+            <a
+              class="navigation__link btn btn__navigation"
+              href="/"
+              target="_blank"
+              >Home</a
+            >
           </li>
           <li class="navigation__item">
             <a
@@ -59,7 +68,7 @@
       </nav>
       <div class="header__searching-and-links list">
         <input
-          class="searching__input field"
+          class="searching__input text__field field"
           type="search"
           placeholder="Search"
         />
@@ -69,9 +78,9 @@
           class="header-links__to-discord btn"
           target="_blank"
         >
-        <svg  class="square-image">
-          <use xlink:href="./images/icons/sprite.svg#discord">
-        </svg>
+          <svg class="square-image">
+            <use xlink:href="./images/icons/sprite.svg#discord" />
+          </svg>
           Discord
         </a>
         <a
@@ -79,9 +88,9 @@
           class="header-links__to-connect btn btn__primary"
           target="_blank"
         >
-        <svg  class="square-image">
-          <use xlink:href="./images/icons/sprite.svg#wallet">
-        </svg>
+          <svg class="square-image">
+            <use xlink:href="./images/icons/sprite.svg#wallet" />
+          </svg>
           Connect
         </a>
       </div>
@@ -92,25 +101,29 @@
           <h1 class="intro__title text__introduction paragraph">Contact Us</h1>
           <nav class="intro__intro-crumbs">
             <ul class="intro-crumbs__list list__controller list">
-              <li class="intro-crumbs__crumb btn btn__navigation">
+              <li class="intro-crumbs__crumb text__field btn__navigation">
                 <a href="./index.html" target="_blank">Home</a>
               </li>
               |
-              <li class="intro-crumbs__crumb btn btn__navigation text__current-crumb">
-                <a href="./contacts.html"
-                  >Contact Us</a
-                >
+              <li
+                class="intro-crumbs__crumb text__field btn__navigation text__current-crumb"
+              >
+                <a href="./contacts.html">Contact Us</a>
               </li>
-            </ol>
+            </ul>
           </nav>
         </div>
       </section>
       <section class="contacts container__section">
         <ul class="contacts__list list">
           <li class="container__contacts">
-            <a href="https://null-smth.com/" target="_blank" class="contacts__contact list list__column behavior__link">
-              <svg  class="contact__image">
-                <use xlink:href="./images/icons/sprite.svg#mark">
+            <a
+              href="https://null-smth.com/"
+              target="_blank"
+              class="contacts__contact list list__column behavior__link"
+            >
+              <svg class="contact__image">
+                <use xlink:href="./images/icons/sprite.svg#mark" />
               </svg>
               <div>
                 <h2 class="contact__title heading">Location</h2>
@@ -119,34 +132,162 @@
             </a>
           </li>
           <li class="container__contacts">
-            <a href="https://null-smth.com/" target="_blank" class="contacts__contact list list__column behavior__link">
-            <svg  class="contact__image">
-              <use xlink:href="./images/icons/sprite.svg#mail">
-            </svg>
-            <div>
-              <h2 class="contact__title heading">Email</h2>
-              <p class="contact__informtion">Info.avitex@gmail.com</p>
-            </div>
-          </a>
+            <a
+              href="https://null-smth.com/"
+              target="_blank"
+              class="contacts__contact list list__column behavior__link"
+            >
+              <svg class="contact__image">
+                <use xlink:href="./images/icons/sprite.svg#mail" />
+              </svg>
+              <div>
+                <h2 class="contact__title heading">Email</h2>
+                <p class="contact__informtion">Info.avitex@gmail.com</p>
+              </div>
+            </a>
           </li>
           <li class="container__contacts">
-            <a href="https://null-smth.com/" target="_blank" class="contacts__contact list list__column behavior__link">
-            <svg  class="contact__image">
-              <use xlink:href="./images/icons/sprite.svg#phone">
-            </svg>
-            <div>
-              <h2 class="contact__title heading">Phone</h2>
-              <p class="contact__informtion">+1 666 8888</p>
-            </div>
-          </a>
+            <a
+              href="https://null-smth.com/"
+              target="_blank"
+              class="contacts__contact list list__column behavior__link"
+            >
+              <svg class="contact__image">
+                <use xlink:href="./images/icons/sprite.svg#phone" />
+              </svg>
+              <div>
+                <h2 class="contact__title heading">Phone</h2>
+                <p class="contact__informtion">+1 666 8888</p>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
       <section class="questionnaire container__section">
-
+        <div class="questionnaire__container list list__column">
+          <h2 class="questionnaire__title heading">Get in touch</h2>
+          <p class="questionnaire__subtitle">
+            Browse through the most freuently asked questions
+          </p>
+        </div>
+        <form
+          action="#"
+          method="post"
+          class="questionnaire__form text__field list list__column"
+        >
+          <ul class="questionnaire__list list list__column">
+            <li class="form__warning list">
+              <p class="paragraph__field">Use my profile information</p>
+              <label for="personal-info">
+                <input
+                  type="checkbox"
+                  name="personal-info"
+                  id="personal-info"
+                />
+              </label>
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__name">Name</label>
+              <input
+                type="text"
+                name="personal-info"
+                id="personal-info__name"
+                class="field__input field"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__last-name">Last name</label>
+              <input
+                type="text"
+                name="personal-info"
+                id="personal-info__last-name"
+                class="field__input field"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__birth-day">Date of birth</label>
+              <input
+                type="text"
+                name="personal-info"
+                id="personal-info__birth-day"
+                class="field__input field"
+                data-date-format="dd/mm/yyyy"
+                data-language="en"
+                placeholder="dd/mm/yyyy"
+              />
+            </li>
+            <li class="form__field list list__column form__birth-day">
+              <p class="text__field paragraph">Date of birth</p>
+              <input
+                type="radio"
+                class="radio hidden"
+                name="sex"
+                value="male"
+                id="sex__male"
+              />
+              <label class="radio-label" for="sex__male"> Male </label>
+              <input
+                type="radio"
+                class="radio hidden"
+                name="sex"
+                value="female"
+                id="sex__female"
+              />
+              <label class="radio-label" for="sex__female"> Female </label>
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__email">Email</label>
+              <input
+                type="email"
+                name="personal-info"
+                id="personal-info__email"
+                class="field__input field"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__phone">Phone Number</label>
+              <input
+                type="tel"
+                name="personal-info"
+                id="personal-info__phone"
+                class="field__input field"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__message">Message</label>
+              <textarea
+                name="personal-info"
+                id="personal-info__message"
+                class="field__input field"
+              ></textarea>
+            </li>
+            <li class="form__field form__last-fields list">
+              <input
+                type="checkbox"
+                class="checkbox hidden"
+                name="personal-info"
+                value="security"
+                id="personal-info__security"
+              />
+              <label class="checkbox-label" for="personal-info__security">
+                &nbsp;By clicking on the ‘Send Message’ button I agree to
+                <a
+                  href="https://null-smth.com/"
+                  target="_blank"
+                  class="paragraph__link link"
+                >
+                  all the terms of the security policy
+                </a>
+              </label>
+            </li>
+          </ul>
+          <button class="form__submit btn btn__primary" type="submit">
+            Send Message
+          </button>
+        </form>
       </section>
     </main>
-    <footer class="footer container__section">
+    <footer class="footer text__field container__section">
       <div class="footer__footer-description list">
         <div class="footer-description">
           <a class="footer-description__link list behavior__link" href="/">
@@ -160,7 +301,12 @@
           <h3 class="footer-column__title heading__h3">Subscribe</h3>
           <ul class="footer-column__column list__column list">
             <li class="footer-column__item">
-              <a href="/" class="btn__navigation footer-column__link" target="_blank">Home</a>
+              <a
+                href="/"
+                class="btn__navigation footer-column__link"
+                target="_blank"
+                >Home</a
+              >
             </li>
             <li class="footer-column__item">
               <a
@@ -236,19 +382,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-                  <svg >
-                    <use xlink:href="./images/icons/sprite.svg#twitter">
-                  </svg>
-                </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-            >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#facebook">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#twitter" />
               </svg>
             </a>
           </li>
@@ -258,8 +393,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#telegram">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#facebook" />
               </svg>
             </a>
           </li>
@@ -269,8 +404,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#youtube">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#telegram" />
               </svg>
             </a>
           </li>
@@ -280,8 +415,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#tiktok">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#youtube" />
               </svg>
             </a>
           </li>
@@ -291,13 +426,41 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#discord">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#tiktok" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#discord" />
               </svg>
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#personal-info__birth-day").datepicker({
+        language: "en",
+      });
+    </script>
   </body>
 </html>

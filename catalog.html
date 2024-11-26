@@ -7,18 +7,18 @@
       name="description"
       content="The sixth lesson for BRO academy. The page represents catalog with filters and options"
     />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./styles/nice-select.css">
-  <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/nice-select.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" type="image/svg" href="./images/icons/small-logo.svg" />
     <title>Binabox: Catalog</title>
@@ -31,7 +31,12 @@
       <nav class="header__navigation">
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a class="navigation__link btn btn__navigation" href="/" target="_blank">Home</a>
+            <a
+              class="navigation__link btn btn__navigation"
+              href="/"
+              target="_blank"
+              >Home</a
+            >
           </li>
           <li class="navigation__item">
             <a
@@ -60,7 +65,7 @@
       </nav>
       <div class="header__searching-and-links list">
         <input
-          class="searching__input field"
+          class="searching__input text__field field"
           type="search"
           placeholder="Search"
         />
@@ -70,9 +75,9 @@
           class="header-links__to-discord btn"
           target="_blank"
         >
-        <svg  class="square-image">
-          <use xlink:href="./images/icons/sprite.svg#discord">
-        </svg>
+          <svg class="square-image">
+            <use xlink:href="./images/icons/sprite.svg#discord" />
+          </svg>
           Discord
         </a>
         <a
@@ -80,9 +85,9 @@
           class="header-links__to-connect btn btn__primary"
           target="_blank"
         >
-        <svg  class="square-image">
-          <use xlink:href="./images/icons/sprite.svg#wallet">
-        </svg>
+          <svg class="square-image">
+            <use xlink:href="./images/icons/sprite.svg#wallet" />
+          </svg>
           Connect
         </a>
       </div>
@@ -90,246 +95,429 @@
     <main>
       <section class="intro">
         <div class="intro__container container__section">
-          <p class="intro__title text__introduction paragraph">Explore catalog</p>
+          <p class="intro__title text__introduction paragraph">
+            Explore catalog
+          </p>
           <nav class="intro__intro-crumbs">
             <ul class="intro-crumbs__list list__controller list">
-              <li class="intro-crumbs__crumb btn btn__navigation">
+              <li class="intro-crumbs__crumb text__field btn__navigation">
                 <a href="./index.html" target="_blank">Home</a>
               </li>
               |
-              <li class="intro-crumbs__crumb btn btn__navigation text__current-crumb">
-                <a href="./catalog.html"
-                  >Catalog</a
-                >
+              <li
+                class="intro-crumbs__crumb text__field btn__navigation text__current-crumb"
+              >
+                <a href="./catalog.html">Catalog</a>
               </li>
-            </ol>
+            </ul>
           </nav>
         </div>
       </section>
       <div class="catalog-place list">
         <aside class="sidenav list__column list">
-          <form class="sidenav__sidenav-form list__column list" action="#" method="post">
-            <details class="sidenav-form__sidenav-details details container__card">
+          <form
+            class="sidenav__sidenav-form list__column list"
+            action="#"
+            method="post"
+          >
+            <details
+              class="sidenav-form__sidenav-details details container__card"
+            >
               <summary class="sidenav-details__summary details__summary list">
                 <h3 class="sidenav-details__title paragraph">Clothing</h3>
               </summary>
-              <ul class="sidenav-form__list list list__column">
+              <ul class="sidenav-form__list text__field list list__column">
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="clothing" value="combatant" id="clothing-combatant">
-                  <label class="checkbox-label" for="clothing-combatant"> Combatant
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="clothing"
+                    value="combatant"
+                    id="clothing-combatant"
+                  />
+                  <label class="checkbox-label" for="clothing-combatant">
+                    Combatant
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="clothing" value="ninja" id="clothing-ninja">
-                  <label class="checkbox-label" for="clothing-ninja"> Ninja
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="clothing"
+                    value="ninja"
+                    id="clothing-ninja"
+                  />
+                  <label class="checkbox-label" for="clothing-ninja">
+                    Ninja
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" checked name="clothing" value="king" id="clothing-king">
-                  <label class="checkbox-label" for="clothing-king"> King
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    checked
+                    name="clothing"
+                    value="king"
+                    id="clothing-king"
+                  />
+                  <label class="checkbox-label" for="clothing-king">
+                    King
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="clothing" value="queen" id="clothing-queen">
-                  <label class="checkbox-label" for="clothing-queen"> Queen
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="clothing"
+                    value="queen"
+                    id="clothing-queen"
+                  />
+                  <label class="checkbox-label" for="clothing-queen">
+                    Queen
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="clothing" value="robot" id="clothing-robot">
-                  <label class="checkbox-label" for="clothing-robot"> Robot
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="clothing"
+                    value="robot"
+                    id="clothing-robot"
+                  />
+                  <label class="checkbox-label" for="clothing-robot">
+                    Robot
                   </label>
                 </li>
               </ul>
             </details>
-            <details class="sidenav-form__sidenav-details details container__card">
+            <details
+              class="sidenav-form__sidenav-details details container__card"
+            >
               <summary class="sidenav-details__summary details__summary list">
                 <h3 class="sidenav-details__title paragraph">Eyes</h3>
               </summary>
-              <ul class="sidenav-form__list list list__column">
+              <ul class="sidenav-form__list text__field list list__column">
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="clothing" value="yellow" id="eyes-yellow">
-                  <label class="radio-label" for="eyes-yellow"> Yellow
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="clothing"
+                    value="yellow"
+                    id="eyes-yellow"
+                  />
+                  <label class="radio-label" for="eyes-yellow"> Yellow </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="clothing" value="green" id="eyes-green">
-                  <label class="radio-label" for="eyes-green"> Green
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="clothing"
+                    value="green"
+                    id="eyes-green"
+                  />
+                  <label class="radio-label" for="eyes-green"> Green </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" checked name="clothing" value="mix" id="eyes-mix">
-                  <label class="radio-label" for="eyes-mix"> Mix
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    checked
+                    name="clothing"
+                    value="mix"
+                    id="eyes-mix"
+                  />
+                  <label class="radio-label" for="eyes-mix"> Mix </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="clothing" value="orange" id="eyes-orange">
-                  <label class="radio-label" for="eyes-orange"> Orange
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="clothing"
+                    value="orange"
+                    id="eyes-orange"
+                  />
+                  <label class="radio-label" for="eyes-orange"> Orange </label>
                 </li>
               </ul>
             </details>
-            <details class="sidenav-form__sidenav-details details container__card">
+            <details
+              class="sidenav-form__sidenav-details details container__card"
+            >
               <summary class="sidenav-details__summary details__summary list">
                 <h3 class="sidenav-details__title paragraph">Face</h3>
               </summary>
               <ul class="sidenav-form__list list list__column">
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="face" value="heart" id="face-heart">
-                  <label class="radio-label" for="face-heart"> Heart
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="face"
+                    value="heart"
+                    id="face-heart"
+                  />
+                  <label class="radio-label" for="face-heart"> Heart </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="face" value="square" id="face-square">
-                  <label class="radio-label" for="face-square"> Square
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="face"
+                    value="square"
+                    id="face-square"
+                  />
+                  <label class="radio-label" for="face-square"> Square </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" checked name="face" value="mix" id="face-mix">
-                  <label class="radio-label" for="face-mix"> Mix
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    checked
+                    name="face"
+                    value="mix"
+                    id="face-mix"
+                  />
+                  <label class="radio-label" for="face-mix"> Mix </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="face" value="oval" id="face-oval">
-                  <label class="radio-label" for="face-oval"> Oval
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="face"
+                    value="oval"
+                    id="face-oval"
+                  />
+                  <label class="radio-label" for="face-oval"> Oval </label>
                 </li>
               </ul>
             </details>
-            <details class="sidenav-form__sidenav-details details container__card">
+            <details
+              class="sidenav-form__sidenav-details details container__card"
+            >
               <summary class="sidenav-details__summary details__summary list">
                 <h3 class="sidenav-details__title paragraph">Skin</h3>
               </summary>
-              <ul class="sidenav-form__list list list__column">
+              <ul class="sidenav-form__list text__field list list__column">
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="skin" value="yellow" id="skin-yellow">
-                  <label class="radio-label" for="skin-yellow"> Yellow
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="skin"
+                    value="yellow"
+                    id="skin-yellow"
+                  />
+                  <label class="radio-label" for="skin-yellow"> Yellow </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="skin" value="black" id="skin-black">
-                  <label class="radio-label" for="skin-black"> Black
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="skin"
+                    value="black"
+                    id="skin-black"
+                  />
+                  <label class="radio-label" for="skin-black"> Black </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" checked name="skin" value="mix" id="skin-mix">
-                  <label class="radio-label" for="skin-mix"> Mix
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    checked
+                    name="skin"
+                    value="mix"
+                    id="skin-mix"
+                  />
+                  <label class="radio-label" for="skin-mix"> Mix </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="skin" value="white" id="skin-white">
-                  <label class="radio-label" for="skin-white"> White
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="skin"
+                    value="white"
+                    id="skin-white"
+                  />
+                  <label class="radio-label" for="skin-white"> White </label>
                 </li>
               </ul>
             </details>
-            <details class="sidenav-form__sidenav-details details container__card">
+            <details
+              class="sidenav-form__sidenav-details details container__card"
+            >
               <summary class="sidenav-details__summary details__summary list">
                 <h3 class="sidenav-details__title paragraph">Background</h3>
               </summary>
-              <ul class="sidenav-form__list list list__column">
+              <ul class="sidenav-form__list text__field list list__column">
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="background" value="yellow" id="background-yellow">
-                  <label class="radio-label" for="background-yellow"> Yellow
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="background"
+                    value="yellow"
+                    id="background-yellow"
+                  />
+                  <label class="radio-label" for="background-yellow">
+                    Yellow
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="background" value="black" id="background-black">
-                  <label class="radio-label" for="background-black"> Black
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="background"
+                    value="black"
+                    id="background-black"
+                  />
+                  <label class="radio-label" for="background-black">
+                    Black
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" checked name="background" value="mix" id="background-mix">
-                  <label class="radio-label" for="background-mix"> Mix
-                  </label>
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    checked
+                    name="background"
+                    value="mix"
+                    id="background-mix"
+                  />
+                  <label class="radio-label" for="background-mix"> Mix </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="radio" class="radio hidden" name="background" value="white" id="background-white">
-                  <label class="radio-label" for="background-white"> White
+                  <input
+                    type="radio"
+                    class="radio hidden"
+                    name="background"
+                    value="white"
+                    id="background-white"
+                  />
+                  <label class="radio-label" for="background-white">
+                    White
                   </label>
                 </li>
               </ul>
             </details>
-            <details class="sidenav-form__sidenav-details details container__card">
+            <details
+              class="sidenav-form__sidenav-details details container__card"
+            >
               <summary class="sidenav-details__summary details__summary list">
                 <h3 class="sidenav-details__title paragraph">Special</h3>
               </summary>
-              <ul class="sidenav-form__list list list__column">
+              <ul class="sidenav-form__list text__field list list__column">
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="clothing" value="yellow" id="special-yellow">
-                  <label class="checkbox-label" for="special-yellow"> Yellow
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="clothing"
+                    value="yellow"
+                    id="special-yellow"
+                  />
+                  <label class="checkbox-label" for="special-yellow">
+                    Yellow
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="special" value="green" id="special-green">
-                  <label class="checkbox-label" for="special-green"> Green
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="special"
+                    value="green"
+                    id="special-green"
+                  />
+                  <label class="checkbox-label" for="special-green">
+                    Green
                   </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" checked name="special" value="mix" id="special-mix">
-                  <label class="checkbox-label" for="special-mix"> Mix
-                  </label>
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    checked
+                    name="special"
+                    value="mix"
+                    id="special-mix"
+                  />
+                  <label class="checkbox-label" for="special-mix"> Mix </label>
                 </li>
                 <li class="sidenav-form__list-item">
-                  <input type="checkbox" class="checkbox hidden" name="special" value="orange" id="special-orange">
-                  <label class="checkbox-label" for="special-orange"> Orange
+                  <input
+                    type="checkbox"
+                    class="checkbox hidden"
+                    name="special"
+                    value="orange"
+                    id="special-orange"
+                  />
+                  <label class="checkbox-label" for="special-orange">
+                    Orange
                   </label>
                 </li>
               </ul>
             </details>
-          <button class="form__submit btn btn__primary" type="submit">Apply</button>
+            <button class="form__submit btn btn__primary" type="submit">
+              Apply
+            </button>
           </form>
         </aside>
         <section class="all-item">
           <header class="all-item__viewer-header">
             <form class="viewer-header__heading-and-searching list">
-              <h1 class="heading-and-searching__heading heading wide-item">All item</h1>
-                <label for="sorting" class="hidden"></label>
-                <select class="heading-and-searching__select select btn" name="sorting" id="sorting-select">
-                  <option class="option" value="">Sort by</option>
-                  <option class="option" value="newest">Newest</option>
-                  <option class="option" value="popular">Most popular</option>
-                  <option class="option" value="inc-price">Increasing in price</option>
-                  <option class="option" value="dec-price">Lowering the price</option>
-                <input
-                  class="heading-and-searching__searching searching__input field wide-item"
-                  type="search"
-                  placeholder="Search NFT"
-                />             
+              <h1 class="heading-and-searching__heading heading wide-item">
+                All item
+              </h1>
+              <label for="sorting" class="hidden"></label>
+              <select
+                class="heading-and-searching__select select btn"
+                name="sorting"
+                id="sorting-select"
+              >
+                <option class="option" value="">Sort by</option>
+                <option class="option" value="newest">Newest</option>
+                <option class="option" value="popular">Most popular</option>
+                <option class="option" value="inc-price">
+                  Increasing in price
+                </option>
+                <option class="option" value="dec-price">
+                  Lowering the price
+                </option>
+              </select>
+              <input
+                class="heading-and-searching__searching searching__input text__field field wide-item"
+                type="search"
+                placeholder="Search NFT"
+              />
             </form>
             <div class="viewer-header__tags container__card">
               <ul class="tags__chip-list list">
                 <li class="chip-list__chip-item">
-                  <button
-                    class="chip-list__chip-link btn"
-                  >
+                  <button class="chip-list__chip-link btn">
                     NFT
-                    <svg  class="chip-list__chip-image">
-                      <use xlink:href="./images/icons/sprite.svg#close">
+                    <svg class="chip-list__chip-image">
+                      <use xlink:href="./images/icons/sprite.svg#close" />
                     </svg>
                   </button>
                 </li>
                 <li class="chip-list__chip-item">
-                  <button
-                    class="chip-list__chip-link btn"
-                  >
+                  <button class="chip-list__chip-link btn">
                     ICO
-                    <svg  class="chip-list__chip-image">
-                      <use xlink:href="./images/icons/sprite.svg#close">
+                    <svg class="chip-list__chip-image">
+                      <use xlink:href="./images/icons/sprite.svg#close" />
                     </svg>
                   </button>
                 </li>
                 <li class="chip-list__chip-item">
-                  <button
-                    class="chip-list__chip-link btn"
-                  >
+                  <button class="chip-list__chip-link btn">
                     Crypto
-                    <svg  class="chip-list__chip-image">
-                      <use xlink:href="./images/icons/sprite.svg#close">
+                    <svg class="chip-list__chip-image">
+                      <use xlink:href="./images/icons/sprite.svg#close" />
                     </svg>
                   </button>
                 </li>
               </ul>
-              <button class="tags__button btn btn__primary btn__option" type="reset">Clear all</button>
+              <button
+                class="tags__button btn btn__primary text__field btn__option"
+                type="reset"
+              >
+                Clear all
+              </button>
             </div>
           </header>
           <div class="all-item__all-viewer">
@@ -339,7 +527,7 @@
                   href="https://null-smth.com/"
                   class="catalog-cards__link"
                   target="_blank"
-                >  </svg>
+                >
                   <article
                     class="catalog-cards__catolog-card container__card behavior__card"
                   >
@@ -353,7 +541,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -362,8 +552,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -396,7 +586,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -405,8 +597,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -441,7 +633,9 @@
                     >
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -450,8 +644,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -484,7 +678,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -493,8 +689,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -527,7 +723,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -536,8 +734,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -570,7 +768,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -579,9 +779,9 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                <svg  class="square-image">
-                  <use xlink:href="./images/icons/sprite.svg#like">
-                </svg>
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
+                      </svg>
                       Favorites
                     </button>
                     <a
@@ -613,7 +813,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -622,8 +824,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -656,7 +858,9 @@
                     <span class="catolog-card__label label">New</span>
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -665,8 +869,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -701,7 +905,9 @@
                     >
                     <div>
                       <p class="catolog-card__price text__highlite">$199</p>
-                      <h3 class="catolog-card__name text text__small heading__h3">
+                      <h3
+                        class="catolog-card__name text text__small heading__h3"
+                      >
                         Name product
                       </h3>
                     </div>
@@ -710,8 +916,8 @@
                 <div class="catalog-cards__catalog-options">
                   <div class="catalog-options__list list list__column">
                     <button class="catalog-options__favorites btn">
-                      <svg  class="square-image">
-                        <use xlink:href="./images/icons/sprite.svg#like">
+                      <svg class="square-image">
+                        <use xlink:href="./images/icons/sprite.svg#like" />
                       </svg>
                       Favorites
                     </button>
@@ -730,7 +936,7 @@
         </section>
       </div>
     </main>
-    <footer class="footer container__section">
+    <footer class="footer text__field container__section">
       <div class="footer__footer-description list">
         <div class="footer-description">
           <a class="footer-description__link list behavior__link" href="/">
@@ -744,7 +950,12 @@
           <h3 class="footer-column__title heading__h3">Subscribe</h3>
           <ul class="footer-column__column list__column list">
             <li class="footer-column__item">
-              <a href="/" class="btn__navigation footer-column__link" target="_blank">Home</a>
+              <a
+                href="/"
+                class="btn__navigation footer-column__link"
+                target="_blank"
+                >Home</a
+              >
             </li>
             <li class="footer-column__item">
               <a
@@ -820,19 +1031,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-                  <svg >
-                    <use xlink:href="./images/icons/sprite.svg#twitter">
-                  </svg>
-                </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="socials__to-connect btn btn__socials-and-arrows"
-              target="_blank"
-            >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#facebook">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#twitter" />
               </svg>
             </a>
           </li>
@@ -842,8 +1042,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#telegram">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#facebook" />
               </svg>
             </a>
           </li>
@@ -853,8 +1053,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#youtube">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#telegram" />
               </svg>
             </a>
           </li>
@@ -864,8 +1064,8 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#tiktok">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#youtube" />
               </svg>
             </a>
           </li>
@@ -875,19 +1075,30 @@
               class="socials__to-connect btn btn__socials-and-arrows"
               target="_blank"
             >
-              <svg >
-                <use xlink:href="./images/icons/sprite.svg#discord">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#tiktok" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#discord" />
               </svg>
             </a>
           </li>
         </ul>
       </div>
     </footer>
-    <script src="./js/jquery.js"></script> 
+    <script src="./js/jquery.js"></script>
     <script src="./js/jquery.nice-select.js"></script>
     <script>
-      $(document).ready(function() {
-        $('select').niceSelect();
+      $(document).ready(function () {
+        $("select").niceSelect();
       });
     </script>
   </body>
