@@ -79,6 +79,11 @@ a {
   border: 0.1rem solid #d4d9f242;
 }
 
+.container__link:has(a:focus) {
+  box-shadow: 0.25rem 0.25rem #3892f3, -0.25rem 0.25rem #3892f3,
+    0.25rem -0.25rem #3892f3, -0.25rem -0.25rem #3892f3;
+}
+
 .horizontal-divider {
   height: 0.1rem;
   flex-grow: 2;
