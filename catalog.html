@@ -462,7 +462,11 @@
         </aside>
         <section class="all-item">
           <header class="all-item__viewer-header">
-            <form class="viewer-header__heading-and-searching list">
+            <form
+              action="#"
+              method="get"
+              class="viewer-header__heading-and-searching list"
+            >
               <h1 class="heading-and-searching__heading heading wide-item">
                 All item
               </h1>
@@ -487,8 +491,13 @@
                 type="search"
                 placeholder="Search NFT"
               />
+              <button type="submit" class="hidden">Find</button>
             </form>
-            <div class="viewer-header__tags container__card">
+            <form
+              action="#"
+              method="get"
+              class="viewer-header__tags container__card"
+            >
               <ul class="tags__chip-list list">
                 <li class="chip-list__chip-item">
                   <button class="chip-list__chip-link btn">
@@ -521,7 +530,8 @@
               >
                 Clear all
               </button>
-            </div>
+              <button class="hidden" type="submit">Find</button>
+            </form>
           </header>
           <div class="all-item__all-viewer">
             <ul class="all-viewer__catalog-cards list">
