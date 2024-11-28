@@ -21,7 +21,7 @@
   </head>
   <body>
     <header class="header list">
-      <a href="/" class="header__logo behavior__link">
+      <a href="/" class="header__logo">
         <h1 class="header__title logo heading">Binabox</h1>
       </a>
       <nav class="header__navigation">
@@ -30,10 +30,7 @@
             <a class="navigation__link btn btn__navigation" href="/">Home</a>
           </li>
           <li class="navigation__item">
-            <a
-              class="navigation__link btn btn__navigation"
-              href="./blog.html"
-              target="_blank"
+            <a class="navigation__link btn btn__navigation" href="./blog.html"
               >Blog</a
             >
           </li>
@@ -41,7 +38,6 @@
             <a
               class="navigation__link btn btn__navigation"
               href="./catalog.html"
-              target="_blank"
               >Catalog</a
             >
           </li>
@@ -49,12 +45,14 @@
       </nav>
       <div class="header__searching-and-links list">
         <form action="#" method="get" class="searching-and-links__searching">
+          <label for="search-field" class="hidden">Searching recources</label>
           <input
             class="searching__input text__field field"
             type="search"
+            id="search-field"
             placeholder="Search"
           />
-          <button type="submit" class="hidden">Искать</button>
+          <button type="submit" class="hidden">Search</button>
         </form>
         |
         <a
@@ -1361,7 +1359,7 @@
     <footer class="footer text__field container__section">
       <div class="footer__footer-description list">
         <div class="footer-description">
-          <a class="footer-description__link list behavior__link" href="/">
+          <a class="footer-description__link list" href="/">
             <p class="footer-description__title logo paragraph">Binabox</p>
           </a>
           <p class="footer-description__text text text__footer">
@@ -1375,17 +1373,13 @@
               <a href="/" class="btn__navigation footer-column__link">Home</a>
             </li>
             <li class="footer-column__item">
-              <a
-                href="./blog.html"
-                target="_blank"
-                class="footer-column__link btn__navigation"
+              <a href="./blog.html" class="footer-column__link btn__navigation"
                 >Blog</a
               >
             </li>
             <li class="footer-column__item">
               <a
                 href="./catalog.html"
-                target="_blank"
                 class="footer-column__link btn__navigation"
                 >Catalog</a
               >
@@ -1393,7 +1387,6 @@
             <li class="footer-column__item">
               <a
                 href="./contacts.html"
-                target="_blank"
                 class="footer-column__link btn__navigation"
                 >Contact Us</a
               >

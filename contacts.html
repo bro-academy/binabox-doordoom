@@ -28,24 +28,16 @@
   </head>
   <body>
     <header class="header list">
-      <a href="/" class="header__logo behavior__link">
+      <a href="/" class="header__logo">
         <p class="header__title logo heading">Binabox</p>
       </a>
       <nav class="header__navigation">
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a
-              class="navigation__link btn btn__navigation"
-              href="/"
-              target="_blank"
-              >Home</a
-            >
+            <a class="navigation__link btn btn__navigation" href="/">Home</a>
           </li>
           <li class="navigation__item">
-            <a
-              class="navigation__link btn btn__navigation"
-              href="./blog.html"
-              target="_blank"
+            <a class="navigation__link btn btn__navigation" href="./blog.html"
               >Blog</a
             >
           </li>
@@ -53,7 +45,6 @@
             <a
               class="navigation__link btn btn__navigation"
               href="./catalog.html"
-              target="_blank"
               >Catalog</a
             >
           </li>
@@ -68,12 +59,14 @@
       </nav>
       <div class="header__searching-and-links list">
         <form action="#" method="get" class="searching-and-links__searching">
+          <label for="search-field" class="hidden">Searching recources</label>
           <input
             class="searching__input text__field field"
             type="search"
+            id="search-field"
             placeholder="Search"
           />
-          <button type="submit" class="hidden">Искать</button>
+          <button type="submit" class="hidden">Search</button>
         </form>
         |
         <a
@@ -105,7 +98,7 @@
           <nav class="intro__intro-crumbs">
             <ul class="intro-crumbs__list list__controller list">
               <li class="intro-crumbs__crumb text__field btn__navigation">
-                <a href="./index.html" target="_blank">Home</a>
+                <a href="./index.html">Home</a>
               </li>
               |
               <li
@@ -119,7 +112,7 @@
       </section>
       <section class="contacts container__section">
         <ul class="contacts__list list">
-          <li class="container__contacts container__link">
+          <li class="container__link">
             <a
               href="https://www.google.ca/maps/place/2163+Phillips+Gap+Rd,+West+Jefferson,+NC+28694,+%D0%A1%D0%A8%D0%90/@36.2935316,-81.4554006,15.75z/data=!4m6!3m5!1s0x885100bc967e5899:0x97f9d34bb4a14b5!8m2!3d36.2907697!4d-81.4453945!16s%2Fg%2F11cslht6xr?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
               target="_blank"
@@ -134,7 +127,7 @@
               </div>
             </a>
           </li>
-          <li class="container__contacts container__link">
+          <li class="container__link">
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=info.avitex@gmail.com"
               target="_blank"
@@ -149,7 +142,7 @@
               </div>
             </a>
           </li>
-          <li class="container__contacts container__link">
+          <li class="container__link">
             <a
               href="tel:16668888"
               target="_blank"
@@ -264,6 +257,7 @@
                 class="field__input field"
                 required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-123-1234"
               />
             </li>
             <li class="form__field list list__column">
@@ -284,7 +278,7 @@
                 required
               />
               <label class="checkbox-label" for="personal-info__security">
-                &nbsp;By clicking on the ‘Send Message’ button I agree to
+                By clicking on the ‘Send Message’ button I agree to
                 <a
                   href="https://null-smth.com/"
                   target="_blank"
@@ -304,7 +298,7 @@
     <footer class="footer text__field container__section">
       <div class="footer__footer-description list">
         <div class="footer-description">
-          <a class="footer-description__link list behavior__link" href="/">
+          <a class="footer-description__link list" href="/">
             <p class="footer-description__title logo paragraph">Binabox</p>
           </a>
           <p class="footer-description__text text text__footer">
@@ -315,25 +309,16 @@
           <h3 class="footer-column__title heading__h3">Subscribe</h3>
           <ul class="footer-column__column list__column list">
             <li class="footer-column__item">
-              <a
-                href="/"
-                class="btn__navigation footer-column__link"
-                target="_blank"
-                >Home</a
-              >
+              <a href="/" class="btn__navigation footer-column__link">Home</a>
             </li>
             <li class="footer-column__item">
-              <a
-                href="./blog.html"
-                target="_blank"
-                class="footer-column__link btn__navigation"
+              <a href="./blog.html" class="footer-column__link btn__navigation"
                 >Blog</a
               >
             </li>
             <li class="footer-column__item">
               <a
                 href="./catalog.html"
-                target="_blank"
                 class="footer-column__link btn__navigation"
                 >Catalog</a
               >
@@ -471,10 +456,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $("#personal-info__birth-day").datepicker({
-        language: "en",
-      });
-    </script>
+    <script src="./js/contacts-script.js"></script>
   </body>
 </html>
