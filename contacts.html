@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The sixth lesson for BRO academy. The page represents information about contacts of Binabox"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/svg" href="./images/icons/small-logo.svg" />
+    <title>Binabox: Contacts</title>
+  </head>
+  <body>
+    <header class="header list">
+      <a href="/" class="header__logo">
+        <p class="header__title logo heading">Binabox</p>
+      </a>
+      <nav class="header__navigation">
+        <ul class="navigation__list list">
+          <li class="navigation__item">
+            <a class="navigation__link btn btn__navigation" href="/">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link btn btn__navigation" href="./blog.html"
+              >Blog</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./catalog.html"
+              >Catalog</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              class="navigation__link btn btn__navigation"
+              href="./contacts.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__searching-and-links list">
+        <form action="#" method="get" class="searching-and-links__searching">
+          <label for="search-field" class="hidden">Searching recources</label>
+          <input
+            class="searching__input text__field field"
+            type="search"
+            id="search-field"
+            placeholder="Search"
+          />
+          <button type="submit" class="hidden">Search</button>
+        </form>
+        |
+        <a
+          href="https://null-smth.com/"
+          class="header-links__to-discord btn"
+          target="_blank"
+        >
+          <svg class="square-image">
+            <use xlink:href="./images/icons/sprite.svg#discord" />
+          </svg>
+          Discord
+        </a>
+        <a
+          href="https://null-smth.com/"
+          class="header-links__to-connect btn btn__primary"
+          target="_blank"
+        >
+          <svg class="square-image">
+            <use xlink:href="./images/icons/sprite.svg#wallet" />
+          </svg>
+          Connect
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__container container__section">
+          <h1 class="intro__title text__introduction paragraph">Contact Us</h1>
+          <nav class="intro__intro-crumbs">
+            <ul class="intro-crumbs__list list__controller list">
+              <li class="intro-crumbs__crumb text__field btn__navigation">
+                <a href="./index.html">Home</a>
+              </li>
+              |
+              <li
+                class="intro-crumbs__crumb text__field btn__navigation text__current-crumb"
+              >
+                <a href="./contacts.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="contacts container__section">
+        <ul class="contacts__list list">
+          <li class="container__link">
+            <a
+              href="https://www.google.ca/maps/place/2163+Phillips+Gap+Rd,+West+Jefferson,+NC+28694,+%D0%A1%D0%A8%D0%90/@36.2935316,-81.4554006,15.75z/data=!4m6!3m5!1s0x885100bc967e5899:0x97f9d34bb4a14b5!8m2!3d36.2907697!4d-81.4453945!16s%2Fg%2F11cslht6xr?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="contacts__contact list list__column"
+            >
+              <svg class="contact__image">
+                <use xlink:href="./images/icons/sprite.svg#mark" />
+              </svg>
+              <div>
+                <h2 class="contact__title heading">Location</h2>
+                <p class="contact__informtion">2163 Phillips Gap Rd</p>
+              </div>
+            </a>
+          </li>
+          <li class="container__link">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=info.avitex@gmail.com"
+              target="_blank"
+              class="contacts__contact list list__column"
+            >
+              <svg class="contact__image">
+                <use xlink:href="./images/icons/sprite.svg#mail" />
+              </svg>
+              <div>
+                <h2 class="contact__title heading">Email</h2>
+                <p class="contact__informtion">Info.avitex@gmail.com</p>
+              </div>
+            </a>
+          </li>
+          <li class="container__link">
+            <a
+              href="tel:16668888"
+              target="_blank"
+              class="contacts__contact list list__column"
+            >
+              <svg class="contact__image">
+                <use xlink:href="./images/icons/sprite.svg#phone" />
+              </svg>
+              <div>
+                <h2 class="contact__title heading">Phone</h2>
+                <p class="contact__informtion">+1 666 8888</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="questionnaire container__section">
+        <div class="questionnaire__container list list__column">
+          <h2 class="questionnaire__title heading">Get in touch</h2>
+          <p class="questionnaire__subtitle">
+            Browse through the most freuently asked questions
+          </p>
+        </div>
+        <form
+          action="#"
+          method="post"
+          class="questionnaire__form text__field list list__column"
+        >
+          <ul class="questionnaire__list list list__column">
+            <li class="form__warning list">
+              <p class="paragraph__field">Use my profile information</p>
+              <input
+                type="checkbox"
+                name="personal-info"
+                id="personal-info"
+                class="hidden toggle__checkbox"
+              />
+              <label for="personal-info" class="toggle__box"> </label>
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__name">Name</label>
+              <input
+                type="text"
+                name="personal-info"
+                id="personal-info__name"
+                class="field__input field"
+                required
+                minlength="2"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__last-name">Last name</label>
+              <input
+                type="text"
+                name="personal-info"
+                id="personal-info__last-name"
+                class="field__input field"
+                required
+                minlength="2"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__birth-day">Date of birth</label>
+              <input
+                type="text"
+                name="personal-info"
+                id="personal-info__birth-day"
+                class="field__input field"
+                data-date-format="dd/mm/yyyy"
+                data-language="en"
+                placeholder="dd/mm/yyyy"
+                required
+              />
+            </li>
+            <li class="form__field list list__column form__birth-day">
+              <p class="text__field paragraph">Date of birth</p>
+              <input
+                type="radio"
+                class="radio hidden"
+                name="sex"
+                value="male"
+                id="sex__male"
+                required
+              />
+              <label class="radio-label" for="sex__male"> Male </label>
+              <input
+                type="radio"
+                class="radio hidden"
+                name="sex"
+                value="female"
+                id="sex__female"
+              />
+              <label class="radio-label" for="sex__female"> Female </label>
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__email">Email</label>
+              <input
+                type="email"
+                name="personal-info"
+                id="personal-info__email"
+                class="field__input field"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__phone">Phone Number</label>
+              <input
+                type="tel"
+                name="personal-info"
+                id="personal-info__phone"
+                class="field__input field"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-123-1234"
+              />
+            </li>
+            <li class="form__field list list__column">
+              <label for="personal-info__message">Message</label>
+              <textarea
+                name="personal-info"
+                id="personal-info__message"
+                class="field__input field"
+              ></textarea>
+            </li>
+            <li class="form__field form__last-fields list">
+              <input
+                type="checkbox"
+                class="checkbox hidden"
+                name="personal-info"
+                value="security"
+                id="personal-info__security"
+                required
+              />
+              <label class="checkbox-label" for="personal-info__security">
+                <span>
+                  By clicking on the ‘Send Message’ button I agree to
+                  <a
+                    href="https://null-smth.com/"
+                    target="_blank"
+                    class="paragraph__link link"
+                  >
+                    all the terms of the security policy
+                  </a>
+                </span>
+              </label>
+            </li>
+          </ul>
+          <button class="form__submit btn btn__primary" type="submit">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer text__field container__section">
+      <div class="footer__footer-description list">
+        <div class="footer-description">
+          <a class="footer-description__link list" href="/">
+            <p class="footer-description__title logo paragraph">Binabox</p>
+          </a>
+          <p class="footer-description__text text text__footer">
+            We are the best way to check the rarity of NFT collection.
+          </p>
+        </div>
+        <div class="footer__footer-column">
+          <h3 class="footer-column__title heading__h3">Subscribe</h3>
+          <ul class="footer-column__column list__column list">
+            <li class="footer-column__item">
+              <a href="/" class="btn__navigation footer-column__link">Home</a>
+            </li>
+            <li class="footer-column__item">
+              <a href="./blog.html" class="footer-column__link btn__navigation"
+                >Blog</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a
+                href="./catalog.html"
+                class="footer-column__link btn__navigation"
+                >Catalog</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a
+                href="./contacts.html"
+                class="footer-column__link btn__navigation"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__footer-column">
+          <h3 class="footer-column__title heading__h3">Company</h3>
+          <ul class="footer-column__column list__column list">
+            <li class="footer-column__item">
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Terms Canditions</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Whitepaper</a
+              >
+            </li>
+            <li class="footer-column__item">
+              <a
+                href="#"
+                target="_blank"
+                class="footer-column__link btn__navigation"
+                >Help Center</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__socials list">
+        <p class="footer-link__copyright text text__footer">
+          BINABOX 2022 - ALL rights reserved
+        </p>
+        <ul class="socials__list list">
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#twitter" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#facebook" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#telegram" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#youtube" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#tiktok" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__to-connect btn btn__socials-and-arrows"
+              target="_blank"
+            >
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#discord" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/contacts-script.js"></script>
+  </body>
+</html>
