@@ -6,6 +6,7 @@ body {
   max-width: 1728px;
   height: 100vh;
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
 }
 
@@ -784,6 +785,8 @@ a {
 .catalog__catalog-cards {
   gap: 1.5rem;
   overflow: hidden;
+  width: 100%;
+  max-width: 100rem;
 }
 
 .catalog-cards__list-item {
