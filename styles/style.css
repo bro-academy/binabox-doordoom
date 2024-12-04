@@ -4,6 +4,9 @@ body {
   color: #f5f8fb;
   margin: 0 auto;
   max-width: 1728px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 a {
@@ -595,15 +598,15 @@ a {
 }
 
 .body-catalog {
-  display: grid;
   grid-template-columns: 30rem 71.5rem;
   column-gap: 4rem;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 .body-blog {
-  display: grid;
   grid-template-columns: 34.5rem 74rem;
   column-gap: 2rem;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 .header {
@@ -1070,6 +1073,7 @@ a {
 }
 
 .intro {
+  height: fit-content;
   position: relative;
   grid-column: 1 / span 2;
 }
