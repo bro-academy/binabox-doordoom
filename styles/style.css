@@ -1091,17 +1091,6 @@ a {
   animation: sweep 0.3s ease-in;
 }
 
-@keyframes sweep {
-  0% {
-    opacity: 0;
-    transform: translateX(-0.5rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .intro {
   height: fit-content;
   position: relative;
