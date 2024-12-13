@@ -8,6 +8,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -110,15 +111,23 @@ a {
   width: fit-content;
   cursor: pointer;
   background-color: inherit;
+  transition: background-color 0.3s ease-out;
   position: relative;
 }
 
-.btn:hover {
-  background-color: #bfc5ee1f;
-  border: solid 0.1rem #bfc5ee1f;
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  right: -0.25rem;
+  bottom: -0.25rem;
+  border: 0.25rem solid transparent;
 }
 
-.btn:focus {
+.btn:hover,
+.btn:focus,
+.btn:active {
   background-color: #bfc5ee1f;
   border: solid 0.1rem #bfc5ee1f;
 }
@@ -131,11 +140,6 @@ a {
   right: -0.25rem;
   bottom: -0.25rem;
   border: 0.25rem solid #3892f3;
-}
-
-.btn:active {
-  background-color: #bfc5ee1f;
-  border: solid 0.1rem #bfc5ee1f;
 }
 
 .btn__imaged {
@@ -540,6 +544,7 @@ a {
 
 .field {
   border: 0.1rem solid #d0d7fb2b;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .field:hover {
@@ -640,8 +645,11 @@ a {
 
 .navigation__link {
   border-bottom: 0.15rem solid transparent;
+  filter: scaleX(0);
+  transition: filter 0.5s easy-out;
 }
 .navigation__link:hover {
+  filter: scaleX(1);
   border-bottom: 0.15rem solid #0265dc;
 }
 .navigation__link:focus {
@@ -798,16 +806,15 @@ a {
 }
 
 .catalog-cards__catalog-options {
-  display: none;
-}
-.catalog-cards__list-item:hover .catalog-cards__catalog-options {
   position: absolute;
   display: flex;
   align-items: center;
   top: 0;
   bottom: 0;
-  width: 97%;
-  background-color: #0d0d1540;
+  width: calc(100% - 0.375rem);
+  background-color: #0d0d15a0;
+  filter: opacity(0);
+  transition: filter 0s ease;
   vertical-align: middle;
   border-image: linear-gradient(
       -50deg,
@@ -819,6 +826,9 @@ a {
     1;
   border-width: 0.25rem;
   border-style: solid;
+}
+.catalog-cards__list-item:hover .catalog-cards__catalog-options {
+  filter: opacity(1);
 }
 
 .catalog-options__list {
@@ -834,6 +844,8 @@ a {
   justify-content: center;
   color: #0d0d15;
   background-color: #ffffff;
+  transition: transform 0s ease, background-color 0.3s ease;
+  transform: translateY(3rem);
 }
 
 .catalog-options__buy {
@@ -844,13 +856,17 @@ a {
   border-right: 0;
   border-left: 0;
   justify-content: center;
+  transition: transform 0s ease, background-color 0.3s ease;
+  transform: translateY(3rem);
 }
 
-.catalog-options__buy:hover {
-  border-right: 0;
-  border-left: 0;
+.catalog-cards__list-item:hover .catalog-options__favorites,
+.catalog-cards__list-item:hover .catalog-options__buy {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform: translateY(0);
 }
 
+.catalog-options__buy:hover,
 .catalog-options__buy:focus {
   border-right: 0;
   border-left: 0;
@@ -1040,6 +1056,7 @@ a {
 .details {
   display: block;
   max-width: 57rem;
+  width: 100%;
 }
 
 .details__summary {
@@ -1069,10 +1086,19 @@ a {
   content: "-";
 }
 
-.details {
-  display: block;
-  max-width: 57rem;
-  width: 100%;
+.details[open] > *:not(.details__summary) {
+  animation: sweep 0.3s ease-in;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .intro {
@@ -1377,6 +1403,7 @@ a {
   border: 0.1rem solid #d4d9f242;
   align-items: center;
   width: 16.5rem;
+  transition: background-color 0.3s ease;
 }
 
 .contacts__contact:hover {
@@ -1457,7 +1484,7 @@ a {
   border: 0.1rem solid #ea3829;
 }
 
-.form__field:has(.field__input:invalid:not(:focus))::after {
+.form__field:has(.field__input:invalid)::after {
   content: "This field is required.";
   position: absolute;
   backface-visibility: hidden;
@@ -1465,9 +1492,15 @@ a {
   left: 0;
   color: #ea3829;
   font-size: 0.75rem;
+  opacity: 0;
+  transition: border 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
-.form__field:has(.field__input[required]:valid:focus)::after {
+.form__field:has(.field__input:invalid:not(:focus))::after {
+  opacity: 1;
+}
+
+.form__field:has(.field__input[required]:valid)::after {
   content: "Field validation is successful.";
   position: absolute;
   backface-visibility: hidden;
@@ -1475,6 +1508,12 @@ a {
   left: 0;
   color: #008f5d;
   font-size: 0.75rem;
+  opacity: 0;
+  transition: border 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.form__field:has(.field__input[required]:valid:focus)::after {
+  opacity: 1;
 }
 
 .personal-info__checkbox {
